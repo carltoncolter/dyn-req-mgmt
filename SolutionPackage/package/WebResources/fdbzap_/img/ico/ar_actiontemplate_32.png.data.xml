@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{fb8915f9-64f7-e711-a953-000d3a34a14b}</WebResourceId>
+  <Name>fdbzap_/img/ico/ar_actiontemplate_32.png</Name>
+  <DisplayName>fdbzap_/img/ico/ar_actiontemplate_32.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicoar_actiontemplate_32pngFB8915F9-64F7-E711-A953-000D3A34A14B</FileName>
+</WebResource>

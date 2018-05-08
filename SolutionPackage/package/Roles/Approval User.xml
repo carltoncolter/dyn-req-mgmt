@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{285735db-c8f7-e711-a955-000d3a34a1bd}" name="Approval User">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendfdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvAppendfdbzap_ar_actiongroup" level="Global" />
+    <RolePrivilege name="prvAppendfdbzap_ar_actiontemplate" level="Global" />
+    <RolePrivilege name="prvAppendfdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvAppendfdbzap_ar_regardingconfig" level="Global" />
+    <RolePrivilege name="prvAppendTofdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvAppendTofdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvAssignfdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvAssignfdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvCreatefdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvCreatefdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletefdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvDeletefdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvReadfdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvReadfdbzap_ar_actiongroup" level="Global" />
+    <RolePrivilege name="prvReadfdbzap_ar_actiontemplate" level="Global" />
+    <RolePrivilege name="prvReadfdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvReadfdbzap_ar_regardingconfig" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvWritefdbzap_ar_action" level="Basic" />
+    <RolePrivilege name="prvWritefdbzap_ar_approvalrequest" level="Basic" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

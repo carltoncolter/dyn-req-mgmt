@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{6741268c-66b1-473b-bb34-630fa41cec41}</formid>
+    <IntroducedVersion>0.1.0.7</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{32810fd6-0aa8-4663-954b-8230fde7cd6a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{af552155-97e9-4342-9717-eb938836f4b6}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{489d40ea-f12b-40d5-9827-a1c7568966bd}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{19d2bed4-4de5-8ec0-b38d-d15375228785}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Entity Type" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_entitytype" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_entitytype" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{32810fd6-0aa8-4663-954b-8230fde7cd6a}_section_2" showlabel="true" showbar="false" locklevel="0" id="{aa6b3cc1-73bb-e037-1bdb-59006cd76b90}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Field Names" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{75c60ba0-b3e9-4aad-a953-248204d7e1ca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Status Field" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_status_fieldname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_status_fieldname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{243c5750-1975-09da-852c-99117021147b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Last Updated On Field" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_lastupdatedon_fieldname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_lastupdatedon_fieldname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2461d84-ea83-521e-c294-854793b6327e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Request Completed On Field" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_completedon_fieldname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_completedon_fieldname" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Configuration" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The configuration form for the entity with a lookup to the approval request." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{97f44a87-3926-e811-a94f-000d3a310d9c}</WebResourceId>
+  <Name>fdbzap_/img/popup/loading.gif</Name>
+  <DisplayName>fdbzap_/img/popup/loading.gif</DisplayName>
+  <Description>Animated Loading Icon</Description>
+  <WebResourceType>7</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgpopuploadinggif97F44A87-3926-E811-A94F-000D3A310D9C</FileName>
+</WebResource>

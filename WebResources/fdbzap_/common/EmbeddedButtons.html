@@ -1,0 +1,131 @@
+<html><head><title></title>
+    <style type="text/css">
+    html, body {
+        margin:0px;
+        padding:0px;
+        width:100%;
+        height:100%;
+        vertical-align: middle;
+        text-align: center;
+    }
+    html {
+        margin-top:2px;
+    }
+    img {
+        margin-right: 15px;
+        margin-left:15px;
+        border-width: 0px;
+    }
+    button {
+        width:100%;
+        height:48px;
+        background-color: rgb(0,32,80);
+        border-color: rgb(255,255,255);
+        border-width: 0px;
+        color: rgb(255,255,255);
+        direction: ltr;
+        font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Tahoma,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        min-width: 150px;
+        padding-bottom: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 5px;
+        margin-right: 6px;
+        margin-bottom: 7px;
+    }
+    button:disabled {
+        background-color: gray;
+        color: white;
+    }
+    
+    button:hover {
+        background-color: #DF4800;
+        color: white;
+        font-weight: 800;
+    }
+    div {
+        overflow-y:scroll;
+        height: 100%;
+        padding-right: 10px;
+    }
+    
+    @media screen and (-ms-high-contrast: active) {
+        /*TODO: validate high contrast settings*/
+        button {
+            border-color: ActiveBorder;
+        }
+    }
+    </style>
+    
+    <script src="jquery3.3.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //ex: iframe properties buttonid=ButtonId
+        var tabIndex=1;
+
+        function setupButton(config) {
+            var loadImage = function (btn, data) {
+                if (data && data.src) 
+                {
+                    var attr = [];
+                    attr.push("src='"+data.src+"'");
+                    if (data.arialabel) attr.push("aria-label='"+data.arialabel+"'");
+                    if (data.alt) attr.push("alt='"+data.alt+"'");
+                    var img = "<img "+attr.join(" ")+"/>";
+                    btn.append(img);
+                }
+            };
+            
+            if (typeof config=== "undefined" || config===null || typeof config.label === "undefined" || config.label === null)
+            {
+                // invalid config.
+                return;
+            }
+
+            var btn = $("<button/>")
+                .text("")
+                .attr("id", config.buttonid)
+                .attr("title", config.tooltip)
+                .attr("aria-label", config.tooltip)
+                .attr("TabIndex", tabIndex);
+            tabIndex++;
+            $("#buttonarea").append(btn);
+
+            if (config.width && config.width!="auto") {
+                btn.css("maxWidth",config.width + "px");
+            }
+    
+            // bind to the configuration enable and disable events
+            config.disable = function() {
+                var e=$("#"+config.buttonid);
+                e.unbind( "click" );
+                e.attr("disabled","disabled");
+                config.enabled = false;
+            };
+            config.enable = function () {
+                var e=$("#"+config.buttonid);
+                e.unbind( "click" );
+                e.bind("click", config.onClick);
+                var disabled = e.attr("disabled");
+                if (typeof disabled !== typeof undefined && disabled !== false) {
+                    e.removeAttr("disabled");
+                }
+                config.enabled = true;
+            };
+            
+            // Update status
+            config.enabled ? config.enable() : config.disable();
+            
+            if (config.image) loadImage(btn, config.image);
+            btn.append("<span>"+config.label+"</span>");
+            if (config.imageright) loadImage(btn, config.imageright);
+            
+            config.el = btn;
+        }
+    </script>
+    <meta charset="utf-8"></head>
+    <body>
+        <div id="buttonarea">
+        </div>
+    </body></html>

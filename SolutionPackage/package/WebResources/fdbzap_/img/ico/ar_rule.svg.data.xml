@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{68bb49a9-f5f9-e711-a953-000d3a34a108}</WebResourceId>
+  <Name>fdbzap_/img/ico/ar_rule.svg</Name>
+  <DisplayName>fdbzap_/img/ico/ar_rule.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicoar_rulesvg68BB49A9-F5F9-E711-A953-000D3A34A108</FileName>
+</WebResource>

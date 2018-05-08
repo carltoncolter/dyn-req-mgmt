@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="fdbzap.common.data.RunWorkflows.Button.CustomAction" Location="Mscrm.HomepageGrid.fdbzap_cor_group.MainTab.Management.Controls._children" Sequence="48">
+      <CommandUIDefinition>
+        <FlyoutAnchor Alt="$LocLabels:fdbzap.common.data.RunWorkflows.Button.Alt" Command="fdbzap.workflow.command.donothing" Id="fdbzap.common.data.RunWorkflows.Button" Image16by16="$webresource:fdbzap_/img/ico/ar_approvalrequest_16.png" Image32by32="$webresource:fdbzap_/img/ico/ar_approvalrequest_32.png" LabelText="$LocLabels:fdbzap.common.data.RunWorkflows.Button.LabelText" PopulateDynamically="true" PopulateQueryCommand="fdbzap.common.data.GetWorkflows.Command" Sequence="48" TemplateAlias="o2" ToolTipTitle="$LocLabels:fdbzap.common.data.RunWorkflows.Button.ToolTipTitle" ToolTipDescription="$LocLabels:fdbzap.common.data.RunWorkflows.Button.ToolTipDescription" ModernImage="$webresource:fdbzap_/img/ico/ar_approvalrequest_invert.svg">
+          <Menu Id="fdbzap.common.data.RunWorkflows.Button.Menu">
+            <MenuSection Id="fdbzap.workflow.menusection" Title="$LocLabels:fdbzap.workflow.menusection.Title" Sequence="5" DisplayMode="Menu16">
+              <Controls Id="fdbzap.workflow.menusection.Controls" />
+            </MenuSection>
+          </Menu>
+        </FlyoutAnchor>
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.CustomAction" Location="Mscrm.Form.fdbzap_cor_group.MainTab.Save.Controls._children" Sequence="65">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.Alt" Command="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Command" Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button" Image32by32="$webresource:fdbzap_/img/ico/ar_approvalrequest_32.png" Image16by16="$webresource:fdbzap_/img/ico/ar_approvalrequest_16.png" LabelText="$LocLabels:fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.LabelText" Sequence="65" TemplateAlias="o2" ToolTipTitle="$LocLabels:fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.ToolTipTitle" ToolTipDescription="$LocLabels:fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.ToolTipDescription" ModernImage="$webresource:fdbzap_/img/ico/ar_approvalrequest_invert.svg" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.CustomAction" Location="Mscrm.HomepageGrid.fdbzap_cor_group.MainTab.Management.Controls._children" Sequence="45">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.Alt" Command="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Command" Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button" Image32by32="$webresource:fdbzap_/img/ico/ar_approvalrequest_32.png" Image16by16="$webresource:fdbzap_/img/ico/ar_approvalrequest_16.png" LabelText="$LocLabels:fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.LabelText" Sequence="45" TemplateAlias="o2" ToolTipTitle="$LocLabels:fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.ToolTipTitle" ToolTipDescription="$LocLabels:fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.ToolTipDescription" ModernImage="$webresource:fdbzap_/img/ico/ar_approvalrequest_invert.svg" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.CustomAction" Location="Mscrm.SubGrid.fdbzap_cor_group.MainTab.Management.Controls._children" Sequence="75">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.Alt" Command="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Command" Id="fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button" Image32by32="$webresource:fdbzap_/img/ico/ar_approvalrequest_32.png" Image16by16="$webresource:fdbzap_/img/ico/ar_approvalrequest_16.png" LabelText="$LocLabels:fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.LabelText" Sequence="75" TemplateAlias="o2" ToolTipTitle="$LocLabels:fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.ToolTipTitle" ToolTipDescription="$LocLabels:fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.ToolTipDescription" ModernImage="$webresource:fdbzap_/img/ico/ar_approvalrequest_invert.svg" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="fdbzap.common.data.GetWorkflows.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWriteSelected" />
+        <DisplayRule Id="Mscrm.SelectedEntityHasStatecode" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="FDBZAP.Common.Data.getWorkflowOptions" Library="$webresource:fdbzap_/common/data.js">
+          <CrmParameter Value="CommandProperties" />
+          <CrmParameter Value="PrimaryEntityTypeCode" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.CanWritePrimary" />
+        <EnableRule Id="Mscrm.FormStateNotNew" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+        <DisplayRule Id="Mscrm.PrimaryIsActive" />
+        <DisplayRule Id="Mscrm.PrimaryEntityHasStatecode" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="FDBZAP.Common.Data.executeWorkflow" Library="$webresource:fdbzap_/common/data.js">
+          <StringParameter Value="9102877D-DE80-4FDE-A876-61711ACAFB2C" />
+          <CrmParameter Value="PrimaryItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWriteSelected" />
+        <DisplayRule Id="Mscrm.SelectedEntityHasStatecode" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="FDBZAP.Common.Data.executeWorkflow" Library="$webresource:fdbzap_/common/data.js">
+          <StringParameter Value="9102877D-DE80-4FDE-A876-61711ACAFB2C" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="fdbzap.workflow.command.donothing">
+      <EnableRules>
+        <EnableRule Id="fdbzap.workflow.command.donothing.enable" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="fdbzap.workflow.command.donothing.display" />
+      </DisplayRules>
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="fdbzap.workflow.run.command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="FDBZAP.Common.Data.executeWorkflowButton" Library="$webresource:fdbzap_/common/data.js">
+          <CrmParameter Value="CommandProperties" />
+          <CrmParameter Value="PrimaryItemIds" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="fdbzap.workflow.command.donothing.display">
+        <OrRule>
+          <Or>
+            <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="HasStateCode" PropertyValue="true" Default="true" InvertResult="false" />
+            <FormStateRule State="Existing" Default="true" InvertResult="false" />
+          </Or>
+          <Or>
+            <EntityPropertyRule AppliesTo="SelectedEntity" PropertyName="HasStateCode" PropertyValue="true" Default="true" InvertResult="false" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="fdbzap.workflow.command.donothing.enable">
+        <OrRule>
+          <Or>
+            <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" Default="true" InvertResult="false" />
+          </Or>
+          <Or>
+            <FormStateRule State="Existing" Default="true" InvertResult="false" />
+          </Or>
+        </OrRule>
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="fdbzap.common.data.RunWorkflows.Button.Alt">
+      <Titles>
+        <Title description="Run Workflow" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.common.data.RunWorkflows.Button.LabelText">
+      <Titles>
+        <Title description="Run Workflow" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.common.data.RunWorkflows.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Run Workflow" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.common.data.RunWorkflows.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Run Workflow" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.Alt">
+      <Titles>
+        <Title description="Request Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.LabelText">
+      <Titles>
+        <Title description="Request Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Initiate Public Affairs Approval Request Process" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.form.LaunchPublicAffairsApprovalProcess.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Initiate Approval Request" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.Alt">
+      <Titles>
+        <Title description="Request Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.LabelText">
+      <Titles>
+        <Title description="Request Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Initiate Public Affairs Approval Request Process" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.grid.LaunchPublicAffairsApprovalProcess.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Initiate Approval Request" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.Alt">
+      <Titles>
+        <Title description="Request Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.LabelText">
+      <Titles>
+        <Title description="Request Approval" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Initiate Public Affairs Approval Request Process" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.cor_group.subgrid.LaunchPublicAffairsApprovalProcess.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Initiate Approval Request" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.workflow.menusection.Title">
+      <Titles>
+        <Title description="Workflow" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

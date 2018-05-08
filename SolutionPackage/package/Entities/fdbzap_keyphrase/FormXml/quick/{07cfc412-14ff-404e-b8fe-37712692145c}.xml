@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{07cfc412-14ff-404e-b8fe-37712692145c}</formid>
+    <IntroducedVersion>0.1.0.47</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ec90c25e-bb74-4e9c-b8dd-2031c751da25}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c4cf53b7-d02f-4e1f-b6e1-17c5e4c2f1a8}">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c8d7c1bf-d3b1-461f-bf88-b6b82b5d531f}">
+                        <labels>
+                          <label description="Key Phrase" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_keyphrase" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_keyphrase" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

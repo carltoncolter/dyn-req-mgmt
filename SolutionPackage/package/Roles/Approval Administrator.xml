@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{d8443e15-c9f7-e711-a955-000d3a34a1bd}" name="Approval Administrator">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendfdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvAppendfdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvAppendTofdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvAppendTofdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvAssignfdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvAssignfdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvCreatefdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvCreatefdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletefdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvDeletefdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvReadfdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvReadfdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvWritefdbzap_ar_action" level="Global" />
+    <RolePrivilege name="prvWritefdbzap_ar_approvalrequest" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

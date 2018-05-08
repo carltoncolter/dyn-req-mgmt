@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{45d78305-683e-e811-a94e-000d3a363daf}</WebResourceId>
+  <Name>fdbzap_/img/ico/language_16.png</Name>
+  <DisplayName>fdbzap_/img/ico/language_16.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicolanguage_16png45D78305-683E-E811-A94E-000D3A363DAF</FileName>
+</WebResource>

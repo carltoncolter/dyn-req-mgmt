@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "es2015"
+        ,"module": "commonjs"
+        ,"lib" : ["es2015", "es2015.promise", "dom"]
+        ,"noImplicitAny": true
+        ,"removeComments": true
+        ,"preserveConstEnums": true
+        ,"sourceMap": true
+        // ,"outDir": "./pub"
+        ,"sourceRoot": "./fdbzap_"
+        ,"strictNullChecks": true
+        ,"typeRoots": [
+            "./node_modules/@types/"
+        ]
+        ,"types": [
+            "jquery"
+            ,"xrm"
+        ]
+    }
+    ,"include": [
+        "fdbzap_/**/*"
+    ]
+    ,"exclude": [
+        "node_modules"
+        ,"**/*.spec.ts"
+        ,"!node_modules/@types"
+    ]
+    ,"typeAcquisition": {
+        "enable": true
+    }
+    ,"compileOnSave": true
+}

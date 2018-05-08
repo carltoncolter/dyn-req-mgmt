@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Post CreateGroupFromSelection Action" SdkMessageProcessingStepId="{3bf77eb7-a448-e811-a94d-000d3a3669fe}">
+  <PluginTypeName>Plugins.Actions.CreateGroupFromSelection, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870</PluginTypeName>
+  <PluginTypeId>818731a8-a148-e811-a94c-000d3a3acbf2</PluginTypeId>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>0</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{19c389a2-061c-e811-a95b-000d3a370e23}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

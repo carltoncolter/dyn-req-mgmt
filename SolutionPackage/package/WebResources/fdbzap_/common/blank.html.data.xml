@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{a4f8c4ba-300c-e811-a959-000d3a1087a0}</WebResourceId>
+  <Name>fdbzap_/common/blank.html</Name>
+  <DisplayName>fdbzap_/common/blank.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_commonblankhtmlA4F8C4BA-300C-E811-A959-000D3A1087A0</FileName>
+</WebResource>

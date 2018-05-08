@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{81004704-a2cc-47c2-af55-5c5815dacf15}</formid>
+    <IntroducedVersion>0.1.0.10</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{4d759957-92d1-0000-1ab1-111111111101}" IsUserDefined="1" name="tab_1" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_1_section_actionconfiguration" showlabel="true" showbar="false" locklevel="0" id="{716e930a-6dbe-1925-05ec-111111111101}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Action Configuration" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0c0d9491-6d08-9674-e269-897b4b8c957c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Request" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_approvalrequest" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_approvalrequest" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{716e930a-6dbe-5ec1-ce11-111111111101}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{716e930a-6dbe-5ec1-ce11-111111111102}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Action Type" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_actiontype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="fdbzap_ar_actiontype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{979ea8ad-ac71-41be-cdcb-d311029ed1cc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Action Count" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_actioncount" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="fdbzap_ar_actioncount" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_section_commentrequirements" showlabel="true" showbar="false" locklevel="0" id="{6b0ca0d4-24dd-bc07-3325-67362c722708}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Comment Requirements" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{827480e1-1ee6-0205-91e6-ac07a8e3b4e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Require Comment" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_requirecomment" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="fdbzap_ar_requirecomment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{98de10dd-5665-c464-140a-851b2a9d5d18}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Allow Comments" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_allow_comments" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="fdbzap_ar_allow_comments" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_1_section_buttonconfiguration" showlabel="true" showbar="false" locklevel="0" id="{716e930a-6dbe-1925-05ec-111111111102}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Button Configuration" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{716e930a-6dbe-5ec2-ce11-111111111101}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Button Label" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_button_label" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_button_label" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{716e930a-6dbe-5ec2-ce11-111111111102}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Button Tooltip" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_button_tooltip" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_button_tooltip" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e1b0b44a-4e53-0862-bbe5-7ee63c336ab8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Button Order" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_button_order" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="fdbzap_ar_button_order" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_1_section_processinginformation" showlabel="true" showbar="false" locklevel="0" id="{1339234e-1867-5790-ebdc-e2db1ee0aead}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Processing Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0cd3d86e-718c-1ec2-2bea-6d446a4b9226}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Processing Order" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_priority" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="fdbzap_ar_priority" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{716e930a-6dbe-5ec1-ce11-111111111103}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Custom Action Code" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_customactioncode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_customactioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e138e91-ac29-aa26-aee6-456775ca94a3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Approval Process When Clicked" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_endapprovalprocesswhenclicked" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="fdbzap_ar_endapprovalprocesswhenclicked" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{761126b7-65cc-dc94-da4e-915c8a48891d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Rollup Action" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_rollupaction" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_rollupaction" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5cc8c070-a927-86b9-b87d-869c2b795180}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Minimum Action Requirement" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_minaction" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="fdbzap_ar_minaction" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{562d96dc-5307-8599-87ca-d4de69e054a9}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Comments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_comments" showlabel="false" showbar="false" locklevel="0" id="{98e345e5-0150-5960-9c8a-c32758aee499}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" height="auto">
+                  <labels>
+                    <label description="Comments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c00d1ad2-7ec2-be6c-8e37-a9bc15a886ed}" showlabel="true" locklevel="0" auto="true" rowspan="5">
+                        <labels>
+                          <label description="Comments" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_comments" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="fdbzap_ar_comments" disabled="false" uniqueid="{8cc59d79-5905-61aa-7948-1586a1694cb0}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5aa8946d-0f28-45a7-9ba0-f6b349bea411}" columns="111">
+        <rows>
+          <row>
+            <cell id="{0dda94f4-1fe9-437b-8f56-024cf35eda99}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e4112a45-2f69-4f2c-9750-7b4ea58d721f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3b087d12-8b6c-17cb-dd4a-852dbbaa3216}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Configuration" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The action configuration form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

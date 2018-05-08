@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{2be11487-072a-4692-8383-89b98c828c3b}" Name="Request BPF">
+  <XamlFileName>/Workflows/RequestBPF-2BE11487-072A-4692-8383-89B98C828C3B.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <processroleassignment>&lt;DisplayConditions&gt;&lt;Role Id="{627090ff-40a3-4053-8790-584edc5be201}" /&gt;&lt;Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" /&gt;&lt;/DisplayConditions&gt;</processroleassignment>
+  <RunAs>1</RunAs>
+  <UniqueName>fdbzap_bpf_request</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1.0.1</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>fdbzap_requests</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Request BPF" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{8fb19189-2973-4161-a1b7-c31b8a6c37f5}">
+      <label languagecode="1033" description="New" />
+    </steplabels>
+    <steplabels id="{d1a4af4a-857b-403d-86a7-e54b343ad34a}">
+      <label languagecode="1033" description="Request ID" />
+    </steplabels>
+    <steplabels id="{681a07d9-3c5e-4b6a-9ab4-f1c1b17cea3d}">
+      <label languagecode="1033" description="Submission Date" />
+    </steplabels>
+    <steplabels id="{a77b3f31-fb60-4a72-9931-878d0beb7089}">
+      <label languagecode="1033" description="Department Review" />
+    </steplabels>
+    <steplabels id="{ec096d79-66ef-4e6a-b942-dc303c251af0}">
+      <label languagecode="1033" description="Department Approval" />
+    </steplabels>
+    <steplabels id="{53e7f07c-5968-4e03-b0e2-830c774ece5c}">
+      <label languagecode="1033" description="Create Estimate" />
+    </steplabels>
+    <steplabels id="{ae35cab0-d8b6-4a10-bdb8-ec337787fc05}">
+      <label languagecode="1033" description="Estimate" />
+    </steplabels>
+    <steplabels id="{765b1aee-cf17-415c-9592-ee9edd190f69}">
+      <label languagecode="1033" description="Processing" />
+    </steplabels>
+    <steplabels id="{4190b77f-2cf1-4d3a-ba2d-394fcf04fa9f}">
+      <label languagecode="1033" description="Request ID" />
+    </steplabels>
+    <steplabels id="{485d47d0-4181-4315-ac4c-254ef6c042ff}">
+      <label languagecode="1033" description="Final Review" />
+    </steplabels>
+    <steplabels id="{0d5d3b01-9b97-4378-ac4b-14d835c6331f}">
+      <label languagecode="1033" description="Final Approval Status" />
+    </steplabels>
+    <steplabels id="{2b405bc9-ede7-48ef-9f60-1444d72ddd06}">
+      <label languagecode="1033" description="Transmittal" />
+    </steplabels>
+    <steplabels id="{5e197383-7bfa-4f6c-a3fe-d93eca4cec6f}">
+      <label languagecode="1033" description="Transmittal Date" />
+    </steplabels>
+    <steplabels id="{1e3c11b7-3f46-4ed5-a5d0-e4c88f6e6cb7}">
+      <label languagecode="1033" description="Complete" />
+    </steplabels>
+    <steplabels id="{fe74173e-5284-493a-978a-879b4e958231}">
+      <label languagecode="1033" description="Closeout Date" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{65162847-544d-e811-a94d-000d3a3669fe}">
+      <methodid>{7ada21a6-a83d-466d-a1ef-d070c131a611}</methodid>
+      <scope>1</scope>
+      <controlname>a77b3f31-fb60-4a72-9931-878d0beb7089</controlname>
+      <event>STAGEENTER</event>
+      <pipelinestage>40</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>fdbzap_requests</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{66162847-544d-e811-a94d-000d3a3669fe}">
+      <methodid>{49153d8f-af10-4601-9340-1b9a83a6cc81}</methodid>
+      <scope>1</scope>
+      <controlname>485d47d0-4181-4315-ac4c-254ef6c042ff</controlname>
+      <event>STAGEENTER</event>
+      <pipelinestage>40</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>fdbzap_requests</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

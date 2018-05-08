@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-16"?>
+<RibbonDiffXml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="fdbzap.activitypointer.group.Button.CustomAction" Location="Mscrm.HomepageGrid.activitypointer.MainTab.New.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:fdbzap.activitypointer.group.Button.Alt" Command="fdbzap.activitypointer.group.Command" Id="fdbzap.activitypointer.group.Button" LabelText="$LocLabels:fdbzap.activitypointer.group.Button.LabelText" Sequence="95" TemplateAlias="isv" ToolTipTitle="$LocLabels:fdbzap.activitypointer.group.Button.ToolTipTitle" ToolTipDescription="$LocLabels:fdbzap.activitypointer.group.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates" />
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="fdbzap.activitypointer.group.Command">
+      <EnableRules>
+        <EnableRule Id="fdbzap.activitypointer.group.EnableRule" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="fdbzap.activitypointer.DisplayRule0.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="FDBZAP.Common.newGuid" Library="$webresource:fdbzap_/common/popup.js" />
+        <JavaScriptFunction FunctionName="FDBZAP.Email.Grid.groupItems" Library="$webresource:fdbzap_/email/grid.js">
+          <CrmParameter Value="CommandProperties" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <BoolParameter Value="true" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="fdbzap.activitypointer.DisplayRule0.DisplayRule">
+        <EntityRule EntityName="activitypointer" AppliesTo="SelectedEntity" Context="HomePageGrid" Default="true" InvertResult="false" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="fdbzap.activitypointer.group.EnableRule">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" Default="false" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="fdbzap.activitypointer.group.Button.LabelText">
+      <Titles>
+        <Title description="Group" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.activitypointer.group.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Group Messages" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.activitypointer.group.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Group multiple letters or emails together." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="fdbzap.activitypointer.group.Button.Alt">
+      <Titles>
+        <Title description="Group  Correspondence " languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

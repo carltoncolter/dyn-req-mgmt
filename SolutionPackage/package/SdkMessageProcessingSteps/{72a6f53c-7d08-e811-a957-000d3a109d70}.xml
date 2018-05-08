@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Post Check Status Approval Request" SdkMessageProcessingStepId="{72a6f53c-7d08-e811-a957-000d3a109d70}">
+  <PluginTypeName>Plugins.Entities.fdbzap_ar_approvalrequest.CheckStatusAction, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870</PluginTypeName>
+  <PluginTypeId>b0a632a7-a148-e811-a94d-000d3a3669fe</PluginTypeId>
+  <PrimaryEntity>fdbzap_ar_approvalrequest</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>0</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <SdkMessageId>{be008043-b7f7-e711-a955-000d3a34a1bd}</SdkMessageId>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

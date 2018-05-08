@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{e1a63711-f243-e811-a94c-000d3a3acde0}</WebResourceId>
+  <Name>fdbzap_/common/process.js</Name>
+  <DisplayName>fdbzap_/common/process.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_commonprocessjsE1A63711-F243-E811-A94C-000D3A3ACDE0</FileName>
+</WebResource>

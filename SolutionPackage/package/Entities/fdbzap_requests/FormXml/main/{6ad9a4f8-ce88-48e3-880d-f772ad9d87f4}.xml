@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{6ad9a4f8-ce88-48e3-880d-f772ad9d87f4}</formid>
+    <IntroducedVersion>0.1.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{99a8d2b9-7d16-4d7c-946f-6b6c01d98c34}" IsUserDefined="1" name="{99a8d2b9-7d16-4d7c-946f-6b6c01d98c34}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="67%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3b983b4e-443d-475e-ba6b-3938e84637c5}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c42dd46d-8f2b-4699-98b5-34adb5d08c08}">
+                        <labels>
+                          <label description="Request ID" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_requestidcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_requestidcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c15ec637-606c-8240-ab96-bb08b0ba70e9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Requestor" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_requestor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_requestor" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46d9d3b2-eb17-2e55-2953-edb639796191}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_name" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{99a8d2b9-7d16-4d7c-946f-6b6c01d98c34}_section_4" showlabel="false" showbar="false" locklevel="0" id="{7d0e3d25-26ac-973d-7e04-b2e0273a402b}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c70c37ae-919e-7dd0-0d00-30554cdd8b79}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Submission Date" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_date_submission" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_date_submission" disabled="true" uniqueid="{175ae670-3d4d-997b-c6c9-1589a9d38523}" />
+                      </cell>
+                      <cell id="{9cd2e503-804d-5b77-348e-33a57b298b8b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Department Approval Request" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_dep_approval_request" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_dep_approval_request" disabled="false" uniqueid="{75739e74-a708-ac66-91d7-9305d6778c69}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{F8EE6142-2CF7-499D-99C4-CAB849520117}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{3877ce2a-62db-3470-2194-46130b118263}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Final Approval Request" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_final_approval_request" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_final_approval_request" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a63c24b0-5414-9c9c-2e29-caeee8970d96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Transmittal Date" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_date_transmittal" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_date_transmittal" disabled="true" uniqueid="{60b7ce48-2772-a4ac-2d59-1691288b97b8}" />
+                      </cell>
+                      <cell id="{ac63aa35-41ab-21a6-6dcc-05e656c1ad74}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Department Approval Status" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_dep_approval_status" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_dep_approval_status" disabled="false" uniqueid="{626dcb8c-ae77-d701-8391-aa11362e9b43}" />
+                      </cell>
+                      <cell id="{dca2db58-3a03-a529-9314-421621d6aaa5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Final Approval Status" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_final_approval_status" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_final_approval_status" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8e50e6a6-37a0-8894-5ceb-6d9e89692417}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Closeout Date" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_date_closeout" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_date_closeout" disabled="true" uniqueid="{840e80c8-9c86-0c26-ddb8-415102059239}" />
+                      </cell>
+                      <cell id="{448a22e1-7acb-7303-1213-b4a60411690a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Department Approval Updated On" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_dep_approval_updatedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_dep_approval_updatedon" disabled="false" uniqueid="{dca388e8-71b6-b87d-6532-4982461033ea}" />
+                      </cell>
+                      <cell id="{976694b7-1482-5dd0-4804-c23e7363c106}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Final Approval Updated On" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_final_approval_updatedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_final_approval_updatedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3e86e0d3-0a13-6ae5-e731-eace827979ca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Estimate" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_estimate" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="fdbzap_estimate" disabled="false" />
+                      </cell>
+                      <cell id="{5e7b46b0-2438-8b1a-0415-6d346413baa3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Department Approval Completed On" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_dep_approval_completedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_dep_approval_completedon" disabled="false" uniqueid="{4651e9a3-048c-0806-39ca-6ca881879c0d}" />
+                      </cell>
+                      <cell id="{39cd7ac5-91ec-355e-e178-9052e1aa2c99}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Final Approval Completed On" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_final_approval_completedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_final_approval_completedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{99a8d2b9-7d16-4d7c-946f-6b6c01d98c34}_section_3" showlabel="false" showbar="false" locklevel="0" id="{403375ae-3d24-c3bc-0989-d4bbc841985a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{abbca204-099d-7167-0d58-90c48a0b2c51}" showlabel="true" locklevel="0" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="fdbzap_description" disabled="false" uniqueid="{6a4b1e71-4c88-d75e-cd83-3797aee26b43}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="{99a8d2b9-7d16-4d7c-946f-6b6c01d98c34}_section_2" showlabel="false" showbar="false" locklevel="0" id="{6adb3c14-1bc0-4ecd-6d38-94da5e849c88}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4cac5aeb-4be5-41d0-7bb8-d4acb333390e}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Requestor" languagecode="1033" />
+                        </labels>
+                        <control id="requestor_details" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="fdbzap_requestor" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;d880c3cf-80e2-42f3-82f9-24d040d09f17&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{738c28db-a579-6ca9-ed01-e98d8d746a18}" showlabel="false" rowspan="15" auto="false" colspan="1" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{bcee4037-3d58-ec27-8668-783d6c5cd7cd}" disabled="false">
+                          <parameters>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Activities,Notes</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>10</UClientRecordPerPage>
+                            <UClientSortActivitiesByValue>modifiedon</UClientSortActivitiesByValue>
+                            <UClientDisplayActivityHeaderUsing>defaultformat</UClientDisplayActivityHeaderUsing>
+                            <UClientCreateActivityUsing>quickcreateform</UClientCreateActivityUsing>
+                            <UClientDisplayActivityUsing>defaultfields</UClientDisplayActivityUsing>
+                            <DefaultTabId>ActivitiesTab</DefaultTabId>
+                            <OrderByActivityWall>descending</OrderByActivityWall>
+                            <SortActivityWall>modifiedon</SortActivityWall>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{15693945-bb02-494a-abb2-ead53aef4f8c}" columns="111">
+        <rows>
+          <row>
+            <cell id="{7b439b27-40d7-457d-b856-56b77502efc4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{29ddff1d-45f7-4ac5-aab3-f6af1088d2af}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5133a380-a3a0-b76e-3251-710c39371362}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

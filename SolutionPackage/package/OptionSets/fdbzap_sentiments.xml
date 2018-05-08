@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="fdbzap_sentiments" localizedName="Sentiments" description="Sentiment Statuses as they relate to a sentiment score.">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName>Sentiment</ExternalTypeName>
+  <displaynames>
+    <displayname description="Sentiments" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Sentiment Statuses as they relate to a sentiment score." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="741210000" ExternalValue="" Color="#db0404">
+      <labels>
+        <label description="Extremely Negative" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210001" ExternalValue="" Color="#e84820">
+      <labels>
+        <label description="Negative" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210002" ExternalValue="" Color="#f99818">
+      <labels>
+        <label description="Slightly Negative" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210003" ExternalValue="" Color="#fff17c">
+      <labels>
+        <label description="Neutral" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210004" ExternalValue="" Color="#d3ff7c">
+      <labels>
+        <label description="Slightly Positive" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210005" ExternalValue="" Color="#89e547">
+      <labels>
+        <label description="Positive" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210006" ExternalValue="" Color="#1fdb0a">
+      <labels>
+        <label description="Extremely Positive" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

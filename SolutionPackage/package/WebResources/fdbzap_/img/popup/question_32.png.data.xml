@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{60cc3ed7-031c-e811-a956-000d3a37043b}</WebResourceId>
+  <Name>fdbzap_/img/popup/question_32.png</Name>
+  <DisplayName>fdbzap_/img/popup/question_32.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgpopupquestion_32png60CC3ED7-031C-E811-A956-000D3A37043B</FileName>
+</WebResource>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.0.0002.0054" SolutionPackageVersion="9.0" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>FedBizApps_RequestManagement</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="FedBizApps.RequestManagement" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>0.1.0.60</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>fedbizapps</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="FedBizApps" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>fdbzap</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>74121</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="activitymimeattachment" behavior="1" />
+      <RootComponent type="1" schemaName="activitypointer" behavior="1" />
+      <RootComponent type="1" schemaName="annotation" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="email" behavior="1" />
+      <RootComponent type="1" schemaName="fdbzap_ar_action" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_ar_actiongroup" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_ar_actiontemplate" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_ar_approvalrequest" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_ar_regardingconfig" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_bpf_request" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_cor_group" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_keyphrase" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_language" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_requests" behavior="0" />
+      <RootComponent type="1" schemaName="fdbzap_savedsetting" behavior="0" />
+      <RootComponent type="1" schemaName="letter" behavior="1" />
+      <RootComponent type="1" schemaName="task" behavior="1" />
+      <RootComponent type="9" schemaName="fdbzap_ar_approvaltypes" behavior="0" />
+      <RootComponent type="9" schemaName="fdbzap_ar_baseactions" behavior="0" />
+      <RootComponent type="9" schemaName="fdbzap_sentiments" behavior="0" />
+      <RootComponent type="20" id="{285735db-c8f7-e711-a955-000d3a34a1bd}" behavior="0" />
+      <RootComponent type="20" id="{3f2ee6ee-c8f7-e711-a955-000d3a34a1bd}" behavior="0" />
+      <RootComponent type="20" id="{d8443e15-c9f7-e711-a955-000d3a34a1bd}" behavior="0" />
+      <RootComponent type="29" id="{044c2a0e-7c0c-4371-9677-ae1b5ed525c3}" behavior="0" />
+      <RootComponent type="29" id="{16184195-d43c-4809-8bb7-3e7e5ecd9aaa}" behavior="0" />
+      <RootComponent type="29" id="{1b6b4b7e-2045-4552-afd8-4a53f6b9c82b}" behavior="0" />
+      <RootComponent type="29" id="{2be11487-072a-4692-8383-89b98c828c3b}" behavior="0" />
+      <RootComponent type="29" id="{32b4c883-7049-e811-a94c-000d3a3acde0}" behavior="0" />
+      <RootComponent type="29" id="{49153d8f-af10-4601-9340-1b9a83a6cc81}" behavior="0" />
+      <RootComponent type="29" id="{4d5101c9-bb22-4aba-b8b5-7c59defa1273}" behavior="0" />
+      <RootComponent type="29" id="{4e8bc375-93b9-45ff-9957-17e94c6d32dd}" behavior="0" />
+      <RootComponent type="29" id="{59c8dee5-0aa4-4ca7-840f-9cc605f8a11c}" behavior="0" />
+      <RootComponent type="29" id="{6966e3ea-b94c-e811-a94c-000d3a3acde0}" behavior="0" />
+      <RootComponent type="29" id="{6d487669-5c07-e811-a959-000d3a1087a0}" behavior="0" />
+      <RootComponent type="29" id="{6e0383da-ddfa-4034-8418-efcae115e48d}" behavior="0" />
+      <RootComponent type="29" id="{7ada21a6-a83d-466d-a1ef-d070c131a611}" behavior="0" />
+      <RootComponent type="29" id="{9102877d-de80-4fde-a876-61711acafb2c}" behavior="0" />
+      <RootComponent type="29" id="{996ff7a5-a341-4b86-8f61-4c4be02f7510}" behavior="0" />
+      <RootComponent type="29" id="{b9c08e11-a199-4c6c-8e46-ea3272eefb66}" behavior="0" />
+      <RootComponent type="29" id="{c1c3c377-9015-4881-a609-0007644fb679}" behavior="0" />
+      <RootComponent type="29" id="{d1876242-a707-e811-a959-000d3a1087a0}" behavior="0" />
+      <RootComponent type="29" id="{d58ac1eb-5a49-e811-a94c-000d3a3666c5}" behavior="0" />
+      <RootComponent type="29" id="{f8f72b22-9575-438c-8cea-6f0987cc506d}" behavior="0" />
+      <RootComponent type="29" id="{fadb47fa-8fee-417e-aa5d-a4d1df970782}" behavior="0" />
+      <RootComponent type="50" schemaName=":RibbonDiffXml" behavior="0" />
+      <RootComponent type="60" id="{40f897fe-8b20-e811-a957-000d3a3702ca}" behavior="0" />
+      <RootComponent type="60" id="{fe62b08e-6025-e811-a94e-000d3a363879}" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/ar_approvalrequest/action_buttons.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/blank.html" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/Buttons.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/data.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/EmbeddedButtons.html" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/jquery3.3.1.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/jquery3.3.1.min.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/popup.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/powerapp.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/process.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/settings.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/common/tools.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/email/grid.js" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_action.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiongroup.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiongroup_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiongroup_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiongroup_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiontemplate.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiontemplate_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiontemplate_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_actiontemplate_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_action_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_action_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_action_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approvalrequest.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approvalrequest_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approvalrequest_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approvalrequest_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approver.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approver_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approver_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_approver_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_regardingconfig.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_regardingconfig_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_regardingconfig_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_regardingconfig_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_rule.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_rule_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_rule_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/ar_rule_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/corr_group.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/corr_group_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/corr_group_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/corr_group_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/keyphrase_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/keyphrase_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/keyphrase_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/language_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/language_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/language_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/settings_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/settings_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/ico/setting_invert.svg" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/critical_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/critical_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/exclamation_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/exclamation_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/information_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/information_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/loading.gif" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/question_16.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/img/popup/question_32.png" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/Sample.html" behavior="0" />
+      <RootComponent type="61" schemaName="fdbzap_/Sample.html.js" behavior="0" />
+      <RootComponent type="62" schemaName="fdbzap_RequestManagement" behavior="0" />
+      <RootComponent type="62" behavior="0" />
+      <RootComponent type="80" schemaName="fdbzap_RequestManagement" behavior="0" />
+      <RootComponent type="91" id="{fdf355a2-a148-e811-a94d-000d3a3ac063}" schemaName="FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" behavior="0" />
+      <RootComponent type="92" id="{0bbb1a4d-c548-e811-a94c-000d3a3acbf2}" behavior="0" />
+      <RootComponent type="92" id="{175b27a2-a148-e811-a94c-000d3a3acbf2}" behavior="0" />
+      <RootComponent type="92" id="{3bf77eb7-a448-e811-a94d-000d3a3669fe}" behavior="0" />
+      <RootComponent type="92" id="{60f455a2-a148-e811-a94d-000d3a3ac063}" behavior="0" />
+      <RootComponent type="92" id="{70a6f53c-7d08-e811-a957-000d3a109d70}" behavior="0" />
+      <RootComponent type="92" id="{72a6f53c-7d08-e811-a957-000d3a109d70}" behavior="0" />
+      <RootComponent type="92" id="{b3a632a7-a148-e811-a94d-000d3a3669fe}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="1" type="59" schemaName="Emails by Month Due" displayName="Emails by Month Due" parentSchemaName="email" parentDisplayName="Email" solution="msdynce_AppCommon (9.0.4.0052)" id="{1ec1872a-23de-4294-9d7f-1b76272a5fd5}" />
+        <Dependent key="2" type="60" displayName="Information" parentDisplayName="Correspondence Group" id="{c0c3dd3f-7cbe-4c23-bc46-fbb897a07b49}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="66" schemaName="FDBZAP.Controls.RichTextBoxControl" displayName="FDBZAP.Controls.RichTextBoxControl" solution="Active" />
+        <Dependent key="2" type="60" displayName="Information" parentDisplayName="Correspondence Group" id="{c0c3dd3f-7cbe-4c23-bc46-fbb897a07b49}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="5" type="80" schemaName="fdbzap_RequestManagement" displayName="Request Management" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="61" schemaName="msdyn_appmanagementcontrol" displayName="msdyn_appmanagementcontrol" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="7" type="62" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

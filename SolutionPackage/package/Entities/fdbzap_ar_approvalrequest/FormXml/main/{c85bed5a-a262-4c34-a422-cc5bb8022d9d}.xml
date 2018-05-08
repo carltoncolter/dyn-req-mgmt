@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{c85bed5a-a262-4c34-a422-cc5bb8022d9d}</formid>
+    <IntroducedVersion>0.1.0.10</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{f1543629-c96e-4f9c-b98e-133bedae1344}" IsUserDefined="1" name="{f1543629-c96e-4f9c-b98e-133bedae1344}" locklevel="0" expanded="true" showlabel="true" labelid="{34451b33-4e1b-4be5-b55b-4b6c75605b99}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_1_section_actiontaken" showlabel="true" showbar="false" locklevel="0" id="{148ed7eb-2e94-b53e-a3b4-b7b705e2471a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{bc896d9d-dc15-4de4-8284-78536bf2a009}">
+                  <labels>
+                    <label description="Action Taken" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0ad267ec-c548-000b-b949-27a6a13047ad}" showlabel="true" locklevel="0" labelid="{561fa975-2da9-4ce0-ac56-07d6800ab326}">
+                        <labels>
+                          <label description="Action Taken" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_actiontaken" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_actiontaken" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{600cba5d-37b5-6a9a-dee4-79343ea19638}" showlabel="true" locklevel="0" labelid="{575a2222-a94e-4985-8747-f2f00df2e8a3}">
+                        <labels>
+                          <label description="Action Taken On" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_actiontakenon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_ar_actiontakenon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{606148b2-0bf5-4ed2-93c2-02d949249245}" name="{606148b2-0bf5-4ed2-93c2-02d949249245}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" labelid="{f5ab884e-e425-4071-8716-059561e9b7bb}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8f3bd2d4-5cc5-4e80-800e-3be0a4de69ba}" locklevel="1" labelid="{2e9c9fd7-7b20-4e07-9487-cc4ee5446462}">
+                        <labels>
+                          <label description="Request ID" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_requestid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_requestid" />
+                      </cell>
+                      <cell id="{d50920bd-8b59-5e64-0666-889664764e71}" showlabel="true" locklevel="0" labelid="{bbeca2d7-b35e-4d63-aa09-c338d3046738}">
+                        <labels>
+                          <label description="Requested By" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_requestedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_requestedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e581853d-bcbd-4d43-ab97-c648507215d9}" labelid="{0f95e385-e66e-4d12-885f-3ced8e1516bf}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{b25a1622-683d-b1b8-3964-99061853d5e3}" showlabel="true" locklevel="0" labelid="{eb6e2e2e-4640-4f9e-9687-c399f4874f0f}">
+                        <labels>
+                          <label description="Request Comments" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_requestcomments" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="fdbzap_ar_requestcomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{601deb7b-6238-88d0-bcb4-b5b462dba874}" showlabel="true" locklevel="0" labelid="{d4c3fd0e-5a8d-4a8c-8185-8dfd78ca604c}">
+                        <labels>
+                          <label description="Parent Approval Request" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_parentid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_parentid" disabled="false" />
+                      </cell>
+                      <cell id="{01e97dcb-6486-0474-ebeb-6b7829344230}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{acd347c1-8938-d689-6d2c-9ae2d0a55273}" showlabel="true" locklevel="0" labelid="{bacc2c29-7f15-4f18-823b-e8ca0329bcef}" visible="false">
+                        <labels>
+                          <label description="Regarding Object ID" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_regardingobjectid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_regardingobjectid" disabled="false" uniqueid="{3a9519e1-06d8-2d5d-a05b-1368725b0333}" />
+                      </cell>
+                      <cell id="{88487eea-eb8b-401d-b016-3a57d9865c55}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Regarding Object Type" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_regardinggobjectentityname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_ar_regardinggobjectentityname" disabled="false" uniqueid="{05ccebd5-2120-9b43-c998-011295e41d0e}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d20c6717-a964-42bc-844e-2bd6e3c53aa5}" columns="111">
+        <rows>
+          <row>
+            <cell id="{155a318c-f62b-4f2b-97c8-4885057898c0}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{228c63ac-a2bc-2719-84b3-1a8231369414}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Action Taken" languagecode="1033" />
+              </labels>
+              <control id="header_fdbzap_ar_actiontaken" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_actiontaken" disabled="false" />
+            </cell>
+            <cell id="{dbe75667-2272-979e-4422-dc5508e70496}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Action Taken On" languagecode="1033" />
+              </labels>
+              <control id="header_fdbzap_ar_actiontakenon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="fdbzap_ar_actiontakenon" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="fdbzap_/common/settings.js" libraryUniqueId="{b588a1e6-170b-d53b-1662-790d5ca9caa0}" />
+        <Library name="fdbzap_/common/powerapp.js" libraryUniqueId="{2dedb6c4-11be-baeb-e277-de07209e7a5c}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <dependencies>
+            <dependency id="fdbzap_ar_requestid" />
+          </dependencies>
+          <Handlers>
+            <Handler functionName="FDBZAP.PowerApp.SetApprovalSrc" libraryName="fdbzap_/common/settings.js" handlerUniqueId="{aab5d570-2b82-53c3-b804-953a797a53d4}" enabled="true" parameters="&quot;IFRAME_actions&quot;" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="2">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Response" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="The response form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

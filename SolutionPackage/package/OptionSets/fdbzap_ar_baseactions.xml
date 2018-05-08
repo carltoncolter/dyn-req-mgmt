@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="fdbzap_ar_baseactions" localizedName="Approval Action Types">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>0.1.0.10</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Approval Action Types" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="741210000" ExternalValue="" Color="#00ff00">
+      <labels>
+        <label description="Approve" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Approve" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210001" ExternalValue="" Color="#ff0000">
+      <labels>
+        <label description="Reject" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Deny or Reject" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210002" ExternalValue="" Color="#00ff00">
+      <labels>
+        <label description="Concur" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Agree" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210003" ExternalValue="" Color="#ff0000">
+      <labels>
+        <label description="Disagree" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Disagree" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210004" ExternalValue="" Color="#ff0000">
+      <labels>
+        <label description="Acknowledge" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Acknowledge\Received" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210005" ExternalValue="" Color="#00ff00">
+      <labels>
+        <label description="Abstain" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Refrain from action" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="741210099" ExternalValue="" Color="#0000ff">
+      <labels>
+        <label description="Custom" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Custom Action\Workflow" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

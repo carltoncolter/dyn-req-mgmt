@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{cde30cd0-031c-e811-a959-000d3a37062b}</WebResourceId>
+  <Name>fdbzap_/img/popup/critical_16.png</Name>
+  <DisplayName>fdbzap_/img/popup/critical_16.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgpopupcritical_16pngCDE30CD0-031C-E811-A959-000D3A37062B</FileName>
+</WebResource>

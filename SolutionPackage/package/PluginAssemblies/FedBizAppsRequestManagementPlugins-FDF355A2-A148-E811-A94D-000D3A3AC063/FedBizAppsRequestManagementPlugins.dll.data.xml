@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginAssemblyId="fdf355a2-a148-e811-a94d-000d3a3ac063" CustomizationLevel="1">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/FedBizAppsRequestManagementPlugins-FDF355A2-A148-E811-A94D-000D3A3AC063/FedBizAppsRequestManagementPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="FedBizApps.RequestManagement.Plugins.Workflow.GetEntityDetails, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="0b4c3d45-d7e3-4a19-94ba-b1822b0b367d" Name="Get Entity Details">
+      <Description>Get Entity Logical Name and Id</Description>
+      <FriendlyName>Get Entity Details</FriendlyName>
+      <WorkflowActivityGroupName>FedBizApps</WorkflowActivityGroupName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Actions.CreateGroupFromSelection, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="818731a8-a148-e811-a94c-000d3a3acbf2" Name="Plugins.Actions.CreateGroupFromSelection">
+      <FriendlyName>Plugins.Actions.CreateGroupFromSelection</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.account.PreCreateSample, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="dcfe28a4-a148-e811-a94c-000d3a3acde0" Name="Plugins.Entities.account.PreCreateSample">
+      <FriendlyName>Plugins.Entities.account.PreCreateSample</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.email.PostCreateTaskCompletion, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="172da3a7-a148-e811-a94c-000d3a3666c5" Name="Plugins.Entities.email.PostCreateTaskCompletion">
+      <FriendlyName>Plugins.Entities.email.PostCreateTaskCompletion</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.fdbzap_ar_action.PostUpdate, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="8adcd99d-a148-e811-a94c-000d3a3acde0" Name="Plugins.Entities.fdbzap_ar_action.PostUpdate">
+      <FriendlyName>Plugins.Entities.fdbzap_ar_action.PostUpdate</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.fdbzap_ar_approvalrequest.ApplyTemplateGroupAction, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="95a632a7-a148-e811-a94d-000d3a3669fe" Name="Plugins.Entities.fdbzap_ar_approvalrequest.ApplyTemplateGroupAction">
+      <FriendlyName>Plugins.Entities.fdbzap_ar_approvalrequest.ApplyTemplateGroupAction</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.fdbzap_ar_approvalrequest.AssociateUser, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="58ff28a4-a148-e811-a94c-000d3a3acde0" Name="Plugins.Entities.fdbzap_ar_approvalrequest.AssociateUser">
+      <FriendlyName>Plugins.Entities.fdbzap_ar_approvalrequest.AssociateUser</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.fdbzap_ar_approvalrequest.CheckStatusAction, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="b0a632a7-a148-e811-a94d-000d3a3669fe" Name="Plugins.Entities.fdbzap_ar_approvalrequest.CheckStatusAction">
+      <FriendlyName>Plugins.Entities.fdbzap_ar_approvalrequest.CheckStatusAction</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.fdbzap_ar_approvalrequest.PostUpdate, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="b1ac5c57-d364-4ec3-a73c-9674e8ea13e4" Name="Plugins.Entities.fdbzap_ar_approvalrequest.PostUpdate">
+      <FriendlyName>905b154a-73b6-46f8-a550-c7f3c2ee0e5b</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Plugins.Entities.fdbzap_ar_approvalrequest.UpdateRegardingObjectAction, FedBizApps.RequestManagement.Plugins, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f45a02c0e4198870" PluginTypeId="11c8414d-c548-e811-a94d-000d3a3669fe" Name="Plugins.Entities.fdbzap_ar_approvalrequest.UpdateRegardingObjectAction">
+      <FriendlyName>Plugins.Entities.fdbzap_ar_approvalrequest.UpdateRegardingObjectAction</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

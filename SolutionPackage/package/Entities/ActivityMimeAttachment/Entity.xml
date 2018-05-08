@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Name LocalizedName="Attachment" OriginalName="">ActivityMimeAttachment</Name>
+  <EntityInfo>
+    <entity Name="ActivityMimeAttachment" unmodified="1">
+      <attributes />
+    </entity>
+  </EntityInfo>
+  <RibbonDiffXml />
+</Entity>

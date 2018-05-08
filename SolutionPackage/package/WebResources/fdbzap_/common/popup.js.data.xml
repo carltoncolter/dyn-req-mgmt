@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{392b3d1c-5d1c-e811-a95a-000d3a370909}</WebResourceId>
+  <Name>fdbzap_/common/popup.js</Name>
+  <DisplayName>fdbzap_/common/popup.js</DisplayName>
+  <Description>Popup js library to handle popup messages and prompts</Description>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_commonpopupjs392B3D1C-5D1C-E811-A95A-000D3A370909</FileName>
+</WebResource>

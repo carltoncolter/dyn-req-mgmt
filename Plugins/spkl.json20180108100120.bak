@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    {
+      "solution": "FedBizApps_RequestManagement",
+      "profile": "default,debug",
+      "assemblypath": "bin\\Debug"
+    },
+    {
+      "solution": "FedBizApps_RequestManagement",
+      "profile": "release",
+      "assemblypath": "bin\\Release"
+    }
+  ]
+}

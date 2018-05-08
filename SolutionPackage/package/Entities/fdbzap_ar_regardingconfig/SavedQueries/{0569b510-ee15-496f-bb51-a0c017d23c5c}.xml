@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0569b510-ee15-496f-bb51-a0c017d23c5c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fdbzap_ar_name" select="1" icon="1" preview="1">
+        <row name="result" id="fdbzap_ar_regardingconfigid">
+          <cell name="fdbzap_ar_entitytype" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="fdbzap_ar_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="fdbzap_ar_status_fieldname" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="fdbzap_ar_lastupdatedon_fieldname" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="fdbzap_ar_completedon_fieldname" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fdbzap_ar_regardingconfig">
+          <attribute name="fdbzap_ar_name" />
+          <attribute name="createdon" />
+          <order attribute="fdbzap_ar_entitytype" descending="false" />
+          <order attribute="fdbzap_ar_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="fdbzap_ar_entitytype" />
+          <attribute name="fdbzap_ar_status_fieldname" />
+          <attribute name="fdbzap_ar_completedon_fieldname" />
+          <attribute name="fdbzap_ar_lastupdatedon_fieldname" />
+          <attribute name="fdbzap_ar_regardingconfigid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.7</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Approval Regarding Config" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

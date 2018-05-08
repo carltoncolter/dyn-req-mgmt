@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{9361aa6d-2f0d-e811-a957-000d3a109495}</WebResourceId>
+  <Name>fdbzap_/common/tools.js</Name>
+  <DisplayName>fdbzap_/common/tools.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_commontoolsjs9361AA6D-2F0D-E811-A957-000D3A109495</FileName>
+</WebResource>

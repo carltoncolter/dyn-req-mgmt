@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{72c42302-65f7-e711-a952-000d3a34afa9}</WebResourceId>
+  <Name>fdbzap_/img/ico/ar_approvalrequest.svg</Name>
+  <DisplayName>fdbzap_/img/ico/ar_approvalrequest.svg</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicoar_approvalrequestsvg72C42302-65F7-E711-A952-000D3A34AFA9</FileName>
+</WebResource>

@@ -1,0 +1,260 @@
+<entities>
+  <entity name="fdbzap_ar_actiontemplate" displayname="Approval Action Template" etc="10014" primaryidfield="fdbzap_ar_actiontemplateid" primarynamefield="fdbzap_ar_name" disableplugins="false">
+    <fields>
+      <field updateCompare="true" displayname="Action Group" name="fdbzap_ar_actiongroupid" type="entityreference" lookupType="fdbzap_ar_actiongroup" customfield="true" />
+      <field displayname="Action Type" name="fdbzap_ar_actiontype" type="optionsetvalue" customfield="true" />
+      <field displayname="Allow Comments" name="fdbzap_ar_allow_comments" type="bool" customfield="true" />
+      <field displayname="Approval Action Template" name="fdbzap_ar_actiontemplateid" type="guid" primaryKey="true" />
+      <field displayname="Button Label" name="fdbzap_ar_button_label" type="string" customfield="true" />
+      <field displayname="Button Order" name="fdbzap_ar_button_order" type="number" customfield="true" />
+      <field displayname="Button Tooltip" name="fdbzap_ar_button_tooltip" type="string" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Custom Action Code" name="fdbzap_ar_customactioncode" type="string" customfield="true" />
+      <field displayname="End Approval Process When Clicked" name="fdbzap_ar_endapprovalprocesswhenclicked" type="bool" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field updateCompare="true" displayname="Name" name="fdbzap_ar_name" type="string" customfield="true" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Processing Order" name="fdbzap_ar_priority" type="number" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Require Comment" name="fdbzap_ar_requirecomment" type="bool" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="fdbzap_ar_actiongroup" displayname="Approval Action Group" etc="10013" primaryidfield="fdbzap_ar_actiongroupid" primarynamefield="fdbzap_ar_name" disableplugins="false">
+    <fields>
+      <field displayname="Approval Action Group" name="fdbzap_ar_actiongroupid" type="guid" primaryKey="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field updateCompare="true" displayname="Name" name="fdbzap_ar_name" type="string" customfield="true" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="fdbzap_language" displayname="Language" etc="10019" primaryidfield="fdbzap_languageid" primarynamefield="fdbzap_language" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="ISO 6391 Code" name="fdbzap_iso6391code" type="string" customfield="true" />
+      <field displayname="Language" name="fdbzap_language" type="string" customfield="true" />
+      <field displayname="Language" name="fdbzap_languageid" type="guid" primaryKey="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+  </entity>
+  <entity name="contact" displayname="Contact" etc="2" primaryidfield="contactid" primarynamefield="fullname" disableplugins="false">
+    <fields>
+      <field displayname="Address 1: Post Office Box" name="address1_postofficebox" type="string" />
+      <field displayname="Address 1: Primary Contact Name" name="address1_primarycontactname" type="string" />
+      <field displayname="Address 1: Shipping Method" name="address1_shippingmethodcode" type="optionsetvalue" />
+      <field displayname="Address 1: State/Province" name="address1_stateorprovince" type="string" />
+      <field displayname="Address 1: Street 1" name="address1_line1" type="string" />
+      <field displayname="Address 1: Street 2" name="address1_line2" type="string" />
+      <field displayname="Address 1: Freight Terms" name="address1_freighttermscode" type="optionsetvalue" />
+      <field displayname="Address 1: Address Type" name="address1_addresstypecode" type="optionsetvalue" />
+      <field displayname="Address 1: City" name="address1_city" type="string" />
+      <field displayname="Address 1: Country/Region" name="address1_country" type="string" />
+      <field displayname="Address 1: County" name="address1_county" type="string" />
+      <field displayname="Address 1: Fax" name="address1_fax" type="string" />
+      <field displayname="Address 1: Latitude" name="address1_latitude" type="float" />
+      <field displayname="Address 1: Longitude" name="address1_longitude" type="float" />
+      <field displayname="Address 1: Phone" name="address1_telephone1" type="string" />
+      <field displayname="Address 1: Street 3" name="address1_line3" type="string" />
+      <field displayname="Address 1: Telephone 2" name="address1_telephone2" type="string" />
+      <field displayname="Address 1: Telephone 3" name="address1_telephone3" type="string" />
+      <field displayname="Address 1: UPS Zone" name="address1_upszone" type="string" />
+      <field displayname="Address 1: UTC Offset" name="address1_utcoffset" type="number" />
+      <field displayname="Address 1: ZIP/Postal Code" name="address1_postalcode" type="string" />
+      <field displayname="Birthday" name="birthdate" type="datetime" dateMode="absolute" />
+      <field displayname="Created On" name="createdon" type="datetime" dateMode="relative" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" dateMode="relative" />
+      <field displayname="Email" name="emailaddress1" type="string" />
+      <field updateCompare="true" displayname="First Name" name="firstname" type="string" />
+      <field updateCompare="true" displayname="Last Name" name="lastname" type="string" />
+      <field displayname="Home Phone" name="telephone2" type="string" />
+      <field displayname="Business Phone" name="telephone1" type="string" />
+      <field displayname="Gender" name="gendercode" type="optionsetvalue" />
+    </fields>
+  </entity>
+  <entity name="queue" displayname="Queue" etc="2020" primaryidfield="queueid" primarynamefield="name" disableplugins="false">
+    <fields>
+      <field displayname="Allow to Use Credentials for Email Processing (Obsolete)" name="allowemailcredentials" type="bool" />
+      <field displayname="Business Unit" name="businessunitid" type="entityreference" lookupType="businessunit" />
+      <field displayname="Convert Incoming Email To Activities" name="incomingemailfilteringmethod" type="optionsetvalue" />
+      <field displayname="Convert To Email Activities" name="ignoreunsolicitedemail" type="bool" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Email Address O365 Admin Approval Status" name="isemailaddressapprovedbyo365admin" type="bool" />
+      <field displayname="Entity Image" name="entityimage" type="imagedata" />
+      <field displayname="Entity Image Id" name="entityimageid" type="guid" />
+      <field displayname="Exchange Rate" name="exchangerate" type="decimal" />
+      <field displayname="Fax Queue" name="isfaxqueue" type="bool" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Incoming Email" name="emailaddress" type="string" />
+      <field displayname="Incoming Email Delivery Method" name="incomingemaildeliverymethod" type="optionsetvalue" />
+      <field displayname="Mailbox" name="defaultmailbox" type="entityreference" lookupType="mailbox" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field updateCompare="true" displayname="Name" name="name" type="string" />
+      <field displayname="No. of Members" name="numberofmembers" type="number" />
+      <field displayname="Outgoing Email Delivery Method" name="outgoingemaildeliverymethod" type="optionsetvalue" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owner (deprecated)" name="primaryuserid" type="entityreference" lookupType="systemuser" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Password (Obsolete)" name="emailpassword" type="string" />
+      <field displayname="Primary Email Status" name="emailrouteraccessapproval" type="optionsetvalue" />
+      <field displayname="Queue" name="queueid" type="guid" primaryKey="true" />
+      <field displayname="Queue Items" name="numberofitems" type="number" />
+      <field displayname="Queue Type" name="queuetypecode" type="optionsetvalue" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Type" name="queueviewtype" type="optionsetvalue" />
+      <field displayname="User Name (Obsolete)" name="emailusername" type="string" />
+    </fields>
+    <relationships>
+      <relationship name="queuemembership" manyToMany="true" isreflexive="false" relatedEntityName="queuemembership" m2mTargetEntity="systemuser" m2mTargetEntityPrimaryKey="systemuserid" />
+    </relationships>
+  </entity>
+  <entity name="email" displayname="Email" etc="4202" primaryidfield="activityid" primarynamefield="subject" disableplugins="false">
+    <fields>
+      <field displayname=" SendersAccount Type" name="sendersaccountobjecttypecode" type="string" />
+      <field displayname="Activity Status" name="statecode" type="state" />
+      <field displayname="Activity Type" name="activitytypecode" type="string" />
+      <field displayname="Actual End" name="actualend" type="datetime" dateMode="relative" />
+      <field displayname="Actual Start" name="actualstart" type="datetime" dateMode="relative" />
+      <field displayname="Attachment Count" name="attachmentcount" type="number" />
+      <field displayname="Attachment Open Count" name="attachmentopencount" type="number" />
+      <field displayname="Bcc" name="bcc" type="partylist" />
+      <field displayname="Category" name="category" type="string" />
+      <field displayname="Cc" name="cc" type="partylist" />
+      <field displayname="Compression" name="compressed" type="bool" />
+      <field displayname="Conversation Index" name="conversationindex" type="string" />
+      <field displayname="Conversation Index (Hash)" name="baseconversationindexhash" type="number" />
+      <field displayname="Correlation Method" name="correlationmethod" type="optionsetvalue" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" dateMode="relative" updateCompare="true" />
+      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
+      <field displayname="Date Sent" name="senton" type="datetime" dateMode="relative" updateCompare="true" />
+      <field displayname="Delivery Priority" name="deliveryprioritycode" type="optionsetvalue" />
+      <field displayname="Delivery Receipt Requested" name="deliveryreceiptrequested" type="bool" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Direction" name="directioncode" type="bool" />
+      <field displayname="Due Date" name="scheduledend" type="datetime" dateMode="relative" />
+      <field displayname="Duration" name="actualdurationminutes" type="number" />
+      <field displayname="Email Message" name="activityid" type="guid" primaryKey="true" />
+      <field displayname="Email Reminder Expiry Time" name="emailreminderexpirytime" type="datetime" dateMode="relative" />
+      <field displayname="Email Reminder Status" name="emailreminderstatus" type="optionsetvalue" />
+      <field displayname="Email Reminder Text" name="emailremindertext" type="string" />
+      <field displayname="Email Reminder Type" name="emailremindertype" type="optionsetvalue" />
+      <field displayname="Email Sender Type" name="emailsenderobjecttypecode" type="string" />
+      <field displayname="Exchange Rate" name="exchangerate" type="decimal" />
+      <field displayname="Followed" name="isemailfollowed" type="bool" />
+      <field displayname="Following" name="followemailuserpreference" type="bool" />
+      <field displayname="From" name="sender" type="string" updateCompare="true" />
+      <field displayname="From" name="from" type="partylist" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="In Reply To Message" name="inreplyto" type="string" />
+      <field displayname="Is Billed" name="isbilled" type="bool" />
+      <field displayname="Is Regular Activity" name="isregularactivity" type="bool" />
+      <field displayname="Is Workflow Created" name="isworkflowcreated" type="bool" />
+      <field displayname="Last On Hold Time" name="lastonholdtime" type="datetime" dateMode="relative" />
+      <field displayname="Last Opened Time" name="lastopenedtime" type="datetime" dateMode="relative" />
+      <field displayname="Last SLA applied" name="slainvokedid" type="entityreference" lookupType="sla" />
+      <field displayname="Links Clicked Count" name="linksclickedcount" type="number" />
+      <field displayname="Message ID" name="messageid" type="string" />
+      <field displayname="Mime Type" name="mimetype" type="string" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" dateMode="relative" />
+      <field displayname="No. of Delivery Attempts" name="deliveryattempts" type="number" />
+      <field displayname="Notifications" name="notifications" type="optionsetvalue" />
+      <field displayname="On Hold Time (Minutes)" name="onholdtime" type="number" />
+      <field displayname="Open Count" name="opencount" type="number" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Priority" name="prioritycode" type="optionsetvalue" />
+      <field displayname="Process" name="processid" type="guid" />
+      <field displayname="Process Stage" name="stageid" type="guid" />
+      <field displayname="Read Receipt Requested" name="readreceiptrequested" type="bool" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" dateMode="relative" />
+      <field displayname="Regarding" name="regardingobjectid" type="entityreference" lookupType="account|asyncoperation|bookableresourcebooking|bookableresourcebookingheader|bulkoperation|campaign|campaignactivity|contact|contract|entitlement|entitlementtemplate|incident|invoice|knowledgearticle|knowledgebaserecord|lead|msdyn_postalbum|opportunity|quote|salesorder|site" />
+      <field displayname="Reminder Set" name="isemailreminderset" type="bool" />
+      <field displayname="Reply Count" name="replycount" type="number" />
+      <field displayname="Scheduled Duration" name="scheduleddurationminutes" type="number" />
+      <field displayname="Send Later" name="delayedemailsendtime" type="datetime" dateMode="relative" />
+      <field displayname="Service" name="serviceid" type="entityreference" lookupType="service" />
+      <field displayname="SLA" name="slaid" type="entityreference" lookupType="sla" />
+      <field displayname="Sort Date" name="sortdate" type="datetime" dateMode="relative" />
+      <field displayname="Start Date" name="scheduledstart" type="datetime" dateMode="relative" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Sub-Category" name="subcategory" type="string" />
+      <field displayname="Subject" name="subject" type="string" updateCompare="true" />
+      <field displayname="Submitted By" name="submittedby" type="string" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="To" name="to" type="partylist" updateCompare="true" />
+      <field displayname="To Recipients" name="torecipients" type="string" />
+      <field displayname="Tracking Token" name="trackingtoken" type="string" />
+      <field displayname="Traversed Path" name="traversedpath" type="string" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="fdbzap_ar_regardingconfig" displayname="Approval Regarding Config" etc="10012" primaryidfield="fdbzap_ar_regardingconfigid" primarynamefield="fdbzap_ar_name" disableplugins="false">
+    <fields>
+      <field displayname="Approval Last Updated On Field" name="fdbzap_ar_lastupdatedon_fieldname" type="string" customfield="true" />
+      <field displayname="Approval Regarding Config" name="fdbzap_ar_regardingconfigid" type="guid" primaryKey="true" />
+      <field displayname="Approval Request Completed On Field" name="fdbzap_ar_completedon_fieldname" type="string" customfield="true" />
+      <field displayname="Approval Status Field" name="fdbzap_ar_status_fieldname" type="string" customfield="true" />
+      <field displayname="Entity Type" name="fdbzap_ar_entitytype" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Name" name="fdbzap_ar_name" type="string" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+</entities>

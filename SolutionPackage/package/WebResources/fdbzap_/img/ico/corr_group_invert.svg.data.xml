@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{90537e84-3926-e811-a94f-000d3a32c8b8}</WebResourceId>
+  <Name>fdbzap_/img/ico/corr_group_invert.svg</Name>
+  <DisplayName>fdbzap_/img/ico/corr_group_invert.svg</DisplayName>
+  <Description>Inverted Correspondence Group Icon</Description>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>0.1.0.34</IntroducedVersion>
+  <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>1</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicocorr_group_invertsvg90537E84-3926-E811-A94F-000D3A32C8B8</FileName>
+</WebResource>

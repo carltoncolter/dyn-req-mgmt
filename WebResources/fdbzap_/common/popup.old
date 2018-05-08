@@ -1,0 +1,582 @@
+﻿namespace FDBZAP {
+    // JQuery Finder
+    let _$: JQueryStatic = ({} as JQueryStatic);
+    if (typeof $ === "undefined") {
+        _$ = (function() {
+            const jq = FDBZAP.getJQuery();
+            _$ = jq;
+            return jq.apply(this, arguments);
+        } as JQueryStatic);
+    } else {
+        _$ = $;
+    }
+    
+    export namespace Common {
+        export class Popup {
+            public content?: JQuery<HTMLElement> | HTMLElement | string;
+            public config: Popup.IPopupSettings;
+
+            constructor(config?: Popup.IPopupSettings, content?: JQuery<HTMLElement> | HTMLElement | string) {
+                _$(); // init jQuery
+                this.content = content;
+                this.config = _$.extend(true, {}, config || new Popup.Settings());
+            }
+        
+            public render(): JQueryPromise<Popup.IButtonClickEventData> {
+                // set id
+                this.config.id = this.config.id || `popup-${Tools.newGuid()}`;
+                // return promise
+                return new Popup.PopupInstance(this.config, this.content).promise;
+            }
+        }
+
+        export namespace Popup {
+            export interface IButton {
+                name: string;
+                buttonType: ButtonType | string | number;
+            }
+
+            export interface IButtonClickEventData {
+                clicked: Popup.IButton;
+                values: { [index: string]: any };
+            }
+
+            export interface IButtonSettings {
+                buttonSettings?: number;
+                buttonLayout?: Popup.ButtonLayout;
+                messageType?: MessageType;
+                defaultButton?: DefaultButton;
+            }
+
+            export interface IControl {
+                innerControl: JQuery<HTMLElement>;
+                focus: () => void;
+                deferred?: JQueryDeferred<Popup.IButtonClickEventData>;
+            }
+
+            export interface IControlClickEventData {
+                control: IControl;
+                controlId: string;
+                clickedButton: Popup.IButton;
+            }
+
+            export interface IPopupSettings extends IButtonSettings {
+                width?: number;
+                height?: number;
+                modal?: boolean;
+                id?: string;
+                showImage?: boolean;
+                title?: string;
+            }
+
+            // Combined like vb MsgBox
+            export enum ButtonLayout {
+                OKOnly = 0,
+                OKCancel = 1,
+                AbortRetryIgnore = 2,
+                YesNoCancel = 3,
+                YesNo = 4,
+                RetryCancel = 5,
+                NoButtons = 6,
+            }
+
+            export enum ButtonType {
+                Ok = 1,
+                Cancel = 2,
+                Abort = 3,
+                Retry = 4,
+                Ignore = 5,
+                Yes = 6,
+                No = 7,
+            }
+
+            export enum DefaultButton {
+                DefaultButton1 = 0,
+                DefaultButton2 = 256,
+                DefaultButton3 = 512,
+            }
+
+            export enum MessageType {
+                Normal = 0,
+                Critical = 16,
+                Question = 32,
+                Exclamation = 48,
+                Information = 64,
+            }
+            
+            export enum MsgBoxType {
+                Error = 0,
+                Warning = 1,
+                Alert = 2,
+                Confirmation = 3,
+                Input = 4,
+                Loading = 5,
+            }
+
+            export function msgBox(textPrompt: string, 
+                buttons: Popup.ButtonLayout | DefaultButton | MessageType | number, 
+                options?: IPopupSettings, msgBoxType?: Popup.MsgBoxType): JQueryPromise<Popup.ButtonClickEventData> 
+            {
+                options = options || new Popup.Settings();
+                options.buttonLayout = buttons as number;
+                options.showImage = options.showImage || options.showImage === null;
+                
+                if (msgBoxType) {
+                    options.title = options.title || Popup.MsgBoxType[msgBoxType];
+                }
+                
+                return new Popup(options, _$("<span class='msgboxPrompt popupText'/>").text(textPrompt)).render();
+            }
+
+            export function inputBox(textPrompt: string, defaultValue: string, options?: IPopupSettings) 
+            {
+                options = options || new Popup.Settings();
+                options.messageType = MessageType.Question;
+                options.title = options.title || Popup.MsgBoxType[Popup.MsgBoxType.Input];
+                options.id = `popup-${Tools.newGuid()}`;
+
+                const content = _$("<span/>").append(
+                    _$("<span/>").text(textPrompt), /*! label */
+                    _$("<input type='text' style='margin-left:10px;' name='inputBoxValue'/>")
+                    .on("keyup", (e) => {
+                        if (e.keyCode === 13) {
+                            _$(`#${options!.id}`).find("#popupBtnOk").trigger("click");
+                        }
+                    }),
+                );
+                    
+                return new Popup(options, content).render();
+            }
+
+            export function loading(options?: IPopupSettings)
+            {
+                const imgpath = FDBZAP.Common.Tools.getWebResourceBaseUrl() + "img/popup/loading.gif";
+
+                options = options || new Popup.Settings();
+                options.messageType = MessageType.Information;
+                options.title = options.title || Popup.MsgBoxType[Popup.MsgBoxType.Loading];
+                options.id = `popup-${Tools.newGuid()}`;
+
+                const content = _$("<span/>").append(
+                    _$("<span style='font-size:3em;/>").text("Loading. . . "), /*! label */
+                    _$(`<img src='${imgpath}' alt='loading...' style='border:none;'/>`),
+                );
+
+                return new Popup(options, content).render();
+
+            }
+
+            export function errorMsg(message: string, options?: IPopupSettings) {
+                return this.msgBox(message, MessageType.Critical, options, Popup.MsgBoxType.Error);
+            }
+
+            export function warning(message: string, options?: IPopupSettings) {
+                return this.msgBox(message, MessageType.Exclamation, options, Popup.MsgBoxType.Warning);
+            }
+
+            export function alert(message: string, options?: IPopupSettings) {
+                return this.msgBox(message, MessageType.Normal + Popup.ButtonLayout.OKOnly, options, Popup.MsgBoxType.Alert);
+            }
+
+            export function confirm(message: string, options?: IPopupSettings) {
+                return this.msgBox(message, MessageType.Normal + Popup.ButtonLayout.OKCancel, options, Popup.MsgBoxType.Confirmation);
+            }
+
+            export function remove(popupid: string) {
+                _$("#" + popupid).remove();
+                _$("#modal-" + popupid).remove();
+            }
+
+            export class ButtonClickEventData implements Popup.IButtonClickEventData {
+                public clicked: Popup.IButton;
+                public values: { [index: string]: any };
+
+                constructor(clicked: Popup.IButton, values: { [index: string]: any }) {
+                    this.clicked = clicked;
+                    this.values = values;
+                }
+            }
+
+            export class Button implements Popup.IButton {
+                public name: string;
+                public buttonType: ButtonType | string | number;
+                constructor(name: string, buttonType: ButtonType | string | number) {
+                    this.name = name;
+                    this.buttonType = buttonType;
+                }
+            }
+
+            export class ButtonSettings implements IButtonSettings {
+                private innerButtonSettings: number;
+                get buttonSettings(): number {
+                    return this.innerButtonSettings;
+                }
+                // tslint:disable:no-bitwise
+                set buttonSettings(value: number) {
+                    this.innerButtonSettings = value;
+
+                    this.innerButtonLayout = value & ((1 << 4) - 1);
+
+                    const styleWithoutButtonType = value & ~((1 << 4) - 1);
+                    this.innerMessageType = styleWithoutButtonType & ((1 << 8) - 1);
+
+                    this.innerDefaultButton = value & ~((1 << 8) - 1);
+                }
+                // tslint:enable:no-bitwise
+
+                private innerButtonLayout: Popup.ButtonLayout;
+                get buttonLayout(): Popup.ButtonLayout {
+                    return this.innerButtonLayout;
+                }
+                set buttonLayout(value: Popup.ButtonLayout) {
+                    this.innerButtonLayout = value;
+                    this.calculateStyle();
+                }
+
+                private innerMessageType: MessageType;
+                get messageType(): MessageType {
+                    return this.innerMessageType;
+                }
+                set messageType(value: MessageType) {
+                    this.innerMessageType = value;
+                    this.calculateStyle();
+                }
+
+                private innerDefaultButton: DefaultButton;
+                get defaultButton(): DefaultButton {
+                    return this.innerDefaultButton;
+                }
+                set defaultButton(value: DefaultButton) {
+                    this.innerDefaultButton = value;
+                    this.calculateStyle();
+                }
+
+                constructor(combinedStyle: number) {
+                    this.buttonSettings = combinedStyle;
+                }
+
+                private calculateStyle() {
+                    this.innerButtonSettings = this.innerButtonLayout + this.innerMessageType + this.innerDefaultButton;
+                }
+            }
+
+            export class ControlClickEventData implements IControlClickEventData {
+                public control: IControl;
+                public controlId: string;
+                public clickedButton: Popup.IButton;
+                constructor(control: IControl, clickedButton: Popup.IButton) {
+                    this.control = control;
+                    this.controlId = String(this.control.innerControl.attr("id"));
+                    this.clickedButton = clickedButton;
+                }
+            }
+
+            export class Settings extends ButtonSettings implements IPopupSettings, IButtonSettings {
+                public minWidth: number = 300;
+                public minHeight: number = 140;
+                public maxWidth: number = 600;
+                public maxHeight: number = 600;
+                public width: number = 0;
+                public height: number = 0;
+                public modal: boolean = false;
+                public id?: string;
+                public showImage?: boolean;
+                public title: string;
+                public imagePath?: string;
+
+                constructor() {
+                    super(1);
+                }
+            }
+
+            export class PopupInstance extends Settings implements IControl {
+                public style: string;
+                public innerControl: JQuery<HTMLElement>;
+                public focus: () => void;
+                public deferred: JQueryDeferred<Popup.IButtonClickEventData>;
+                public promise: JQueryPromise<Popup.IButtonClickEventData>;
+
+                constructor(config: IPopupSettings, content?: JQuery<HTMLElement> | HTMLElement | string) {
+                    super();
+                    _$.extend(true, this, config);
+
+                    const formFactor = Tools.getFormFactor();
+
+                    // Set Default Image Path for popup images
+                    this.imagePath = this.imagePath || (Tools.getWebResourceBaseUrl() + "img/popup");
+                    
+                    this.deferred = _$.Deferred();
+                    this.promise = this.deferred.promise();
+
+                    const putInRange = (i: number, min: number, max: number) => Math.min(max, Math.max(i, min));
+
+                    this.width = putInRange(this.width, this.minWidth, this.maxWidth);
+                    this.height = putInRange(this.height, this.minHeight, this.maxHeight);
+
+                    // Set Default Title
+                    if (!this.title) {
+                        switch (this.messageType) {
+                            case Popup.MessageType.Normal: this.title = "Message"; break;
+                            case Popup.MessageType.Critical: this.title = "Critical Message"; break;
+                            case Popup.MessageType.Question: this.title = "Question"; break;
+                            case Popup.MessageType.Exclamation: this.title = "Important Message"; break;
+                            case Popup.MessageType.Information: this.title = "Information"; break;
+                            default: this.title = "Message"; break;
+                        }
+                    }
+                    
+                    // Setup default focus event handler
+                    this.focus = () => {
+                        if (_$(this.innerControl).find("input, select, textarea").length > 0) {
+                            this.innerControl.find("input, select, textarea").first().triggerHandler("focus");
+                        }
+                    };
+
+                    // CONTENT DIV
+                    // If content empty, set content to title
+                    if (typeof content === "string") {
+                        // Replace \r\n or \n with <br/>
+                        content = (content as string).replace(/\r?\n/g, "<br/>");
+                    }
+                    
+                    let contentDiv: JQuery<HTMLElement> | Array<JQuery<HTMLElement>>;
+                    contentDiv = _$("<div/>").append(content || _$("<span class='msgboxPrompt popupText'/>").text(this.title));
+                    contentDiv = _$("<div class='popupContent'/>").append(contentDiv).height((this.height - 70).toString() + "px");
+
+                    // Show Image
+                    if (this.showImage && this.messageType !== Popup.MessageType.Normal) {
+                        const imgsrc = `${Popup.MessageType[this.messageType].toLowerCase()}_32.png`;
+                        const contentLeft = _$("<div id='popupLeftContent' style='float:left;width:40px'/>")
+                                            .append(`<img src='${imgsrc}' alt='${this.title}'/></div>`);
+                        const contentRight = (contentDiv as JQuery<HTMLElement>).wrap("<div id='popupRightContent' style='width:auto;margin-left:40px;' />").parent();
+                        contentDiv = [contentLeft, contentRight];
+                    }
+
+                    // BUILD CONTAINER
+                    // TODO: Update this tosupport multiple view types
+                    switch (formFactor)
+                    {
+                        case XrmEnum.ClientFormFactor.Phone:
+                        case XrmEnum.ClientFormFactor.Desktop:
+                        case XrmEnum.ClientFormFactor.Tablet:
+                        case XrmEnum.ClientFormFactor.Unknown:
+                            this.style = "z-index:500;position:fixed;top:50%;left:50%;" +
+                            `margin-left:-${Math.floor(this.width / 2).toString()}px;` +
+                            `margin-top:-${Math.floor(this.height / 2).toString()}px;` +
+                            `width:${this.width.toString()}px;height:${this.height.toString()}px;` +
+                            "font-family:Segoe UI, Tahoma, Arial;font-size:11px;color:#000;background-color:#fff;" +
+                            "border:3px solid #000;";
+                        default:
+                    }
+                    
+                    this.innerControl = _$(`<div class='popup' style='${this.style}' id='${this.id}'/>`);
+
+                    // TITLE DIV
+                    const titleDiv = _$(`<div class='${`popupTitle popup${Popup.MessageType[this.messageType]}`}' id='popupTitle'/>`)
+                        .text(this.title).css("cursor", "move").on("mousedown", this.mouseDownOnTitleEvent);
+
+                    // BUTTON DIV
+                    const buttonsDiv = _$("<div class='popupButtons'/>");
+
+                    switch (this.buttonLayout) {
+                        case Popup.ButtonLayout.OKOnly:
+                            buttonsDiv.append(this.createButton(this, ButtonType.Ok, this.defaultButton === DefaultButton.DefaultButton1));
+                            break;
+                        case Popup.ButtonLayout.AbortRetryIgnore:
+                            buttonsDiv.append(this.createButton(this, ButtonType.Abort, this.defaultButton === DefaultButton.DefaultButton3),
+                                this.createButton(this, ButtonType.Retry, this.defaultButton === DefaultButton.DefaultButton2),
+                                this.createButton(this, ButtonType.Ignore, this.defaultButton === DefaultButton.DefaultButton1));
+                            break;
+                        case Popup.ButtonLayout.YesNoCancel:
+                            buttonsDiv.append(this.createButton(this, ButtonType.Cancel, this.defaultButton === DefaultButton.DefaultButton3),
+                                this.createButton(this, ButtonType.Yes, this.defaultButton === DefaultButton.DefaultButton2),
+                                this.createButton(this, ButtonType.No, this.defaultButton === DefaultButton.DefaultButton1));
+                            break;
+                        case Popup.ButtonLayout.YesNo:
+                            buttonsDiv.append(this.createButton(this, ButtonType.Yes, this.defaultButton === DefaultButton.DefaultButton1),
+                                this.createButton(this, ButtonType.No, this.defaultButton === DefaultButton.DefaultButton2));
+                            break;
+                        case Popup.ButtonLayout.RetryCancel:
+                            buttonsDiv.append(this.createButton(this, ButtonType.Retry, this.defaultButton === DefaultButton.DefaultButton1),
+                                this.createButton(this, ButtonType.Cancel, this.defaultButton === DefaultButton.DefaultButton2));
+                            break;
+                        case Popup.ButtonLayout.NoButtons:
+                            // No Buttons
+                            break;
+                        case Popup.ButtonLayout.OKCancel:
+                        default:
+                            buttonsDiv.append(this.createButton(this, ButtonType.Cancel, this.defaultButton === DefaultButton.DefaultButton2),
+                                this.createButton(this, ButtonType.Ok, this.defaultButton === DefaultButton.DefaultButton1));
+                            break;
+                    }
+
+                    this.innerControl.append(titleDiv, contentDiv, buttonsDiv);
+
+                    const css: any = {
+                        // 'selector': 'style'
+                        "div.popupButtons": {
+                            "backgroundColor": "#fff",
+                            "bottom": "10px",
+                            "color": "#000",
+                            "fontSize": "11px",
+                            "fontWeight": "600",
+                            "position": "absolute",
+                            "right": "10px",
+                        },
+                        "div.popupButtons button": {
+                            "backgroundColor": "ButtonFace",
+                            "border": "1px solid ButtonText",
+                            "color": "ButtonText",
+                            "cursor": "pointer",
+                            "display": "inline-block",
+                            "fontSize": "11px",
+                            "height": "22px",
+                            "margin": "3px 6px 2px",
+                            "padding": "1px 15px",
+                            "textAlign": "center",
+                        },
+                        "div.popupContent": {
+                            "backgroundColor": "#fff",
+                            "overflowX": "hidden",
+                            "overflowY": "auto",
+                            "padding": "10px",
+                        },
+                        "div.popupCritical": {
+                            "backgroundColor": "#AE1F23",
+                            "color": "#fff",
+                        },
+                        "div.popupExclamation": {
+                            "backgroundColor": "#fc8f00",
+                            "color": "#fff",
+                        },
+                        "div.popupInformation": {
+                            "backgroundColor": "#0B5C9E",
+                            "color": "#fff",
+                        },
+                        "div.popupNormal": {
+                            "backgroundColor": "#5f697d",
+                            "color": "#fff",
+                        },
+                        "div.popupQuestion": {
+                            "backgroundColor": "#e68107",
+                            "color": "#fff",
+                        },
+                        "div.popupTitle": {
+                            "fontSize": "18px",
+                            "padding": "10px",
+                        },
+                    };
+
+                    this.applyCSS(this.innerControl, css);
+
+                    if (this.modal) {
+                        const overlay = _$(`<div id='overlay-${this.id}' style='top:0px:left:0px;position:absolute;width:100%;height:100%;z-index:10;background-color:rgba(0,0,0,0.5)'/>`);
+                        _$(top.document.body).append(overlay);
+                    }
+                    _$(top.document.body).append(this.innerControl);
+
+                    this.focus();
+                }
+                
+                public mouseMoveEvent: JQuery.EventHandler<Node, null> | false = (e: JQuery.Event) => {
+                    if (this.innerControl.data("dragging")) {
+                        // strange casting due to VS2017 not recognizing this is not JQueryCoordinates...
+                        const o: JQueryCoordinates = (this.innerControl.data("dragoffset") as any);
+                        this.innerControl.offset({
+                            left: e.pageX - o.left,
+                            top: e.pageY - o.top,
+                        });
+                    }
+                }
+
+                public mouseUpEvent: JQuery.EventHandler<Node, null> | false = (/*e: JQuery.Event*/) => {
+                    this.innerControl.data("dragging", false);
+                    this.innerControl.data("dragoffset", null);
+                    this.innerControl.removeAttr("unselectable");
+                    _$(document.body).off("mousemove", this.mouseMoveEvent);
+                    this.innerControl.off("mouseup", this.mouseUpEvent);
+                }
+
+                public mouseDownOnTitleEvent: JQuery.EventHandler<Node, null> | false = (e: JQuery.Event) => {
+                    // titleDiv.css('cursor', 'move').mousedown(intance.MouseDownOnTitleEvent)
+                    if (this.innerControl && this.innerControl.offset) {
+                        this.innerControl.data("dragging", true);
+                        const controlOffset = this.innerControl.offset() as JQueryCoordinates;
+                        const offset = new CSSStyleDeclaration();
+
+                        // should popup be _$(e.target) instead?
+                        offset.top = String(e.pageY - controlOffset.top); // + _$(window).scrollTop(),
+                        offset.left = String(e.pageX - controlOffset.left); // + _$(window).scrollLeft()
+
+                        this.innerControl.attr("unselectable", "on").data("dragoffset", offset);
+
+                        // movement is tracked on body
+                        _$(document.body).on("mousemove", this.mouseMoveEvent);
+                        this.innerControl.on("mouseup", this.mouseUpEvent);
+                    }
+                }
+                
+                protected applyCSS(el: JQuery<HTMLElement>, css: any) {
+                    // Apply CSS to the element by class
+                    // This is done to support using the javascript without a corresponding css file
+                    for (const selector in css) {
+                        if (css.hasOwnProperty(selector)) {
+                            const style = css[selector];
+                            el.find(selector).css(style);
+                        }
+                    }
+                }
+
+                protected createButton(control: IControl, buttonType: ButtonType | string | number, setfocus: boolean): JQuery<HTMLElement> {
+                    let name = buttonType.toString();
+                    if (buttonType in ButtonType) {
+                        name = ButtonType[buttonType as ButtonType];
+                    }
+                    const btn = _$(`<button type='button' id='popupBtn${name.replace(/\s/g, "")}' class='popupButton'/>`).text(name);
+
+                    const data = new ControlClickEventData(control, new Popup.Button(name, buttonType));
+
+                    btn.on("click", data, (e) => {
+                        const d = e.data;
+                        const values: { [index: string]: any } = {};
+
+                        _$(`#${d.controlId} input`).each(function() {
+                            const input: HTMLInputElement = this as any;
+                            if (input.files) {
+                                values[input.name] = { value: input.value, files: input.files };
+                            } else {
+                                values[input.name] = input.value;
+                            }
+                        });
+
+                        //
+                        _$(`#${d.controlId} select`).each(function() { values[((this as any) as HTMLSelectElement).name] = ((this as any) as HTMLSelectElement).value; });
+                        _$(`#${d.controlId} textarea`).each(function() { values[((this as any) as HTMLTextAreaElement).name] = ((this as any) as HTMLTextAreaElement).value; });
+
+                        const result = new Popup.ButtonClickEventData(d.clickedButton, values);
+
+                        // get and remove the popup
+                        d.control.innerControl.remove();
+
+                        _$(`#overlay-${d.controlId}`).remove();
+                        
+                        const clickType = d.clickedButton.buttonType;
+                        if (clickType === ButtonType.Cancel ||
+                            clickType === ButtonType.Abort ||
+                            clickType === ButtonType.No) {
+                            control.deferred!.reject(result);
+                            return;
+                        }
+                        control.deferred!.resolve(result);
+                    });
+
+                    if (setfocus) {
+                        control.focus = () => { btn.triggerHandler("focus"); };
+                    }
+
+                    return btn;
+                }
+            }
+        }
+    }
+}

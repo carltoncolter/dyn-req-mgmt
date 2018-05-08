@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{d58ac1eb-5a49-e811-a94c-000d3a3666c5}" Name="Lock Final Approval Fields" Description="Final Approval Fields are controlled by workflow and plugins.">
+  <XamlFileName>/Workflows/LockFinalApprovalFields-D58AC1EB-5A49-E811-A94C-000D3A3666C5.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1.0.60</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <PrimaryEntity>fdbzap_requests</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Lock Final Approval Fields" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Final Approval Fields are controlled by workflow and plugins." />
+  </Descriptions>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{e78ac1eb-5a49-e811-a94c-000d3a3666c5}">
+      <controltype>1</controltype>
+      <formid>{6ad9a4f8-ce88-48e3-880d-f772ad9d87f4}</formid>
+      <scope>1</scope>
+      <controlname>processid</controlname>
+      <event>change</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>fdbzap_requests</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{e88ac1eb-5a49-e811-a94c-000d3a3666c5}">
+      <formid>{6ad9a4f8-ce88-48e3-880d-f772ad9d87f4}</formid>
+      <scope>1</scope>
+      <event>load</event>
+      <pipelinestage>0</pipelinestage>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>fdbzap_requests</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

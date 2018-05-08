@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{8993fa02-683e-e811-a94f-000d3a363c81}</WebResourceId>
+  <Name>fdbzap_/img/ico/settings_32.png</Name>
+  <DisplayName>fdbzap_/img/ico/settings_32.png</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicosettings_32png8993FA02-683E-E811-A94F-000D3A363C81</FileName>
+</WebResource>

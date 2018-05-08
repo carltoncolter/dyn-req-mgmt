@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{9102877d-de80-4fde-a876-61711acafb2c}" Name="Initiate Public Affairs Correspondence Approval Request">
+  <XamlFileName>/Workflows/InitiatePublicAffairsCorrespondenceApprovalRequest-9102877D-DE80-4FDE-A876-61711ACAFB2C.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnUpdateAttributeList></TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <CreateStage>40</CreateStage>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.1.0.47</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>fdbzap_cor_group</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Initiate Public Affairs Correspondence Approval Request" />
+  </LocalizedNames>
+</Workflow>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{f448cb85-3926-e811-a94e-000d3a3101b9}</WebResourceId>
+  <Name>fdbzap_/img/ico/corr_group.svg</Name>
+  <DisplayName>fdbzap_/img/ico/corr_group.svg</DisplayName>
+  <Description>Correspondence Group Icon</Description>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>0.1.0.34</IntroducedVersion>
+  <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>1</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/fdbzap_imgicocorr_groupsvgF448CB85-3926-E811-A94E-000D3A3101B9</FileName>
+</WebResource>

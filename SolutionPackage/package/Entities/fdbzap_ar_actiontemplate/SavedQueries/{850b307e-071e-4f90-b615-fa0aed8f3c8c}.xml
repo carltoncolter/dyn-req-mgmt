@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{850b307e-071e-4f90-b615-fa0aed8f3c8c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fdbzap_ar_name" select="1" icon="1" preview="1">
+        <row name="result" id="fdbzap_ar_actiontemplateid">
+          <cell name="fdbzap_ar_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fdbzap_ar_actiontemplate">
+          <attribute name="fdbzap_ar_actiontemplateid" />
+          <attribute name="fdbzap_ar_name" />
+          <attribute name="createdon" />
+          <order attribute="fdbzap_ar_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="fdbzap_ar_name" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.10</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Approval Action Templates" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

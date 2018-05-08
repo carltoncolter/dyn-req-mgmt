@@ -1,0 +1,14 @@
+﻿{
+  "Framework": "jasmine",
+  "CodeCoverageExecutionMode": "Manual", // set to 'Manual' because of a bug with code coverage & chutzpah debugging (https://github.com/mmanela/chutzpah/issues/629)...we will have to set it to Automatic with a build task
+  "CodeCoverageExcludes": [
+    "*\\testhelpers\\*",
+    "*\\tests\\*"
+  ],
+  "Transforms": [
+    {
+      "Name": "jacoco",
+      "Path": "..\\..\\TestResults\\chutzpah-jacoco.xml"
+    }
+  ]
+}

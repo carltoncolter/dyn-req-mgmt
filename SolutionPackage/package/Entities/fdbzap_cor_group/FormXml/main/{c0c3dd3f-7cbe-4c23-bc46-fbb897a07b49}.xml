@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{c0c3dd3f-7cbe-4c23-bc46-fbb897a07b49}</formid>
+    <IntroducedVersion>0.1.0.10</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{c3d8f775-1ede-4647-960e-1223f795fdcc}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{785b3197-5523-46d4-9ab2-389d2f44515e}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{532014c4-26d3-49d5-9300-2a1714928b63}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aa9872ea-74fa-4147-8198-b1a1419c17d6}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{b2d78536-0b70-c474-068d-bc8596751153}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{900b2dd8-1ddd-967d-eb07-7432b250c988}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approval Request" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_ar_approvalrequest" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="fdbzap_ar_approvalrequest" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{889382e1-07e4-e95a-06ba-ae572a289a26}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Response" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{e1adba54-9277-a23a-294a-bc64a6049aaa}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3deedab4-e717-6633-d7c1-1b3bc473473e}" showlabel="true" locklevel="0" auto="false" rowspan="4">
+                        <labels>
+                          <label description="Response" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_response" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="fdbzap_response" disabled="false" uniqueid="{a487a991-2a08-1180-aacc-ceb4dd36311e}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{e5b166d2-cba5-91b9-ab5b-338a6521318e}" showlabel="true" locklevel="0" rowspan="4">
+                        <labels>
+                          <label description="Raw HTML Response" languagecode="1033" />
+                        </labels>
+                        <control id="fdbzap_response" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="fdbzap_response" disabled="false" uniqueid="{a863c783-e04c-84b1-0795-e93a77b415e0}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_email" id="{6edb0e3b-ea61-1d7b-935d-0aed358ad830}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Email" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="{c3d8f775-1ede-4647-960e-1223f795fdcc}_section_2" showlabel="false" showbar="false" locklevel="0" id="{4504cd98-745b-9682-a241-828e87ac06c6}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1ad737ce-e4c3-accc-d375-8a4905aa6b04}" showlabel="true" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Email Messages" languagecode="1033" />
+                        </labels>
+                        <control id="gridEmails" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{CC98CB1F-6552-4FD8-9E2F-39A1CAD2F710}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>fdbzap_email_group</RelationshipName>
+                            <TargetEntityType>email</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{CC98CB1F-6552-4FD8-9E2F-39A1CAD2F710},{7AFF64B0-5B8C-4AD7-89F8-976777EEE178}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{1EC1872A-23DE-4294-9D7F-1B76272A5FD5}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{71076800-e76f-4f58-abc9-a1d9426b4dc3}" columns="111">
+        <rows>
+          <row>
+            <cell id="{0063d336-c715-5aa2-c474-4b245c6eb067}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Name" languagecode="1033" />
+              </labels>
+              <control id="header_fdbzap_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fdbzap_name" disabled="false" />
+            </cell>
+            <cell id="{2ad9414e-a9aa-2729-2cda-628eb4e0cc66}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+            </cell>
+            <cell id="{1023b6c7-8d83-2e6d-4a04-0be1ac214e09}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{a487a991-2a08-1180-aacc-ceb4dd36311e}">
+          <customControl id="{E0DECE4B-6FC8-4a8f-A065-082708572369}">
+            <parameters>
+              <datafieldname>fdbzap_response</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="FDBZAP.Controls.RichTextBoxControl">
+            <parameters>
+              <value>fdbzap_response</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="FDBZAP.Controls.RichTextBoxControl">
+            <parameters>
+              <value>fdbzap_response</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="FDBZAP.Controls.RichTextBoxControl">
+            <parameters>
+              <value>fdbzap_response</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

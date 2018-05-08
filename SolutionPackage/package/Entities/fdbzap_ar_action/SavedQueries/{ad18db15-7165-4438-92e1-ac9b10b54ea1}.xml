@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ad18db15-7165-4438-92e1-ac9b10b54ea1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fdbzap_ar_name" select="1" icon="1" preview="1">
+        <row name="result" id="fdbzap_ar_actionid">
+          <cell name="fdbzap_ar_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fdbzap_ar_action">
+          <attribute name="fdbzap_ar_actionid" />
+          <attribute name="fdbzap_ar_name" />
+          <attribute name="createdon" />
+          <order attribute="fdbzap_ar_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.10</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Approval Action Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

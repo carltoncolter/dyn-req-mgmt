@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ed62ba8f-ce8c-479a-812b-3b59ed33437a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fdbzap_name" select="1" icon="1" preview="1">
+        <row name="result" id="fdbzap_savedsettingid">
+          <cell name="fdbzap_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="fdbzap_savedsetting">
+          <attribute name="fdbzap_savedsettingid" />
+          <attribute name="fdbzap_name" />
+          <attribute name="createdon" />
+          <order attribute="fdbzap_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.0.47</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Saved Settings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
