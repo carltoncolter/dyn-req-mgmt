@@ -189,8 +189,6 @@
       <RootComponent type="61" schemaName="fdbzap_/img/popup/loading.gif" behavior="0" />
       <RootComponent type="61" schemaName="fdbzap_/img/popup/question_16.png" behavior="0" />
       <RootComponent type="61" schemaName="fdbzap_/img/popup/question_32.png" behavior="0" />
-      <RootComponent type="61" schemaName="fdbzap_/Sample.html" behavior="0" />
-      <RootComponent type="61" schemaName="fdbzap_/Sample.html.js" behavior="0" />
       <RootComponent type="62" schemaName="fdbzap_RequestManagement" behavior="0" />
       <RootComponent type="62" behavior="0" />
       <RootComponent type="80" schemaName="fdbzap_RequestManagement" behavior="0" />
