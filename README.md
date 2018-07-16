@@ -15,4 +15,5 @@ The Request Management Solution Starter is a solution built to act as a starter 
 The solution is designed to utilize spkl.  Once you have updated the nuget packages, and have spkl, you should be able to use spkl\pack.bat to package the solution.  When you update the files from nuget, make sure it doesn't overwrite the spkl folders.
 
 To manually package the solution without using spkl, you can run the following, with %SolutionPackage% being the path to the SolutionPackage folder in the code.
-SolutionPackager.exe /action:Pack /zipfile:"FedBizApps_RequestManagement.zip" /folder:"%SolutionPackage%\package" /packagetype:unmanaged /errorlevel:Verbose /nologo /log:packagerlog.txt /map:%SolutionPackage%\map.xml
+
+`SolutionPackager.exe /action:Pack /zipfile:"FedBizApps_RequestManagement.zip" /folder:"%SolutionPackage%\package" /packagetype:unmanaged /errorlevel:Verbose /nologo /log:packagerlog.txt /map:%SolutionPackage%\map.xml`
